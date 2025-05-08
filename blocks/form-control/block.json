@@ -1,0 +1,103 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "pronamic/form-control",
+  "version": "1.0.0",
+  "title": "Form control",
+  "category": "pronamic-forms",
+  "ancestor": [
+    "pronamic/form"
+  ],
+  "icon": "feedback",
+  "description": "",
+  "attributes": {
+    "name": {
+      "type": "string",
+      "default": ""
+    },
+    "value": {
+      "type": "string",
+      "default": ""
+    },
+    "type": {
+      "type": "string",
+      "default": "text",
+      "enum": [
+        "text",
+        "textarea",
+        "url",
+        "email",
+        "password",
+        "tel",
+        "checkbox",
+        "radio"
+      ]
+    },
+    "placeholder": {
+      "type": "string",
+      "default": ""
+    },
+    "required": {
+      "type": "boolean",
+      "default": false
+    },
+    "reference": {
+      "type": "string",
+      "default": ""
+    },
+    "checked": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "example": {
+    "attributes": {
+      "type": "text",
+      "value": "Text"
+    }
+  },
+  "usesContext": [
+    "pronamic/form-field-id",
+    "pronamic/form-field-name",
+    "pronamic/form-field-value"
+  ],
+  "selectors": {
+    "border": ".wp-block-pronamic-form-control__element",
+    "color": ".wp-block-pronamic-form-control__element"
+  },
+  "supports": {
+    "anchor": true,
+    "color": {
+      "__experimentalSkipSerialization": true,
+      "background": true
+    },
+    "html": false,
+    "__experimentalBorder": {
+      "__experimentalSkipSerialization": true,
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true,
+      "__experimentalDefaultControls": {
+        "color": true,
+        "radius": true,
+        "style": true,
+        "width": true
+      }
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "textAlign": true
+    },
+    "pronamicFormControlRequired": true,
+    "pronamicFormsAutoGenerateName": true
+  },
+  "textdomain": "pronamic-forms",
+  "style": "file:style-index.css",
+  "editorScript": "file:index.js"
+}

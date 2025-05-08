@@ -1,0 +1,89 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "pronamic/form-radio-field",
+	"version": "1.0.0",
+	"title": "Single-choice field",
+	"category": "pronamic-forms",
+	"ancestor": [ "pronamic/form" ],
+	"allowedBlocks": [
+		"pronamic/form-radio-option"
+	],
+	"icon": "feedback",
+	"description": "",
+	"attributes": {
+		"label": {
+			"type": "rich-text",
+			"source": "rich-text",
+			"selector": ".wp-block-pronamic-form-label span"
+		},
+		"name": {
+			"type": "string",
+			"default": ""
+		},
+		"value": {
+			"type": "string",
+			"default": ""
+		},
+		"required": {
+			"type": "boolean",
+			"default": false
+		},
+		"reference": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"providesContext": {
+		"pronamic/form-field-id": "id",
+		"pronamic/form-field-name": "name",
+		"pronamic/form-field-reference": "reference",
+		"pronamic/form-field-value": "value"
+	},
+	"example": {
+		"attributes": {
+			"content": "Single choice"
+		}
+	},
+	"supports": {
+		"__experimentalOnEnter": true,
+		"anchor": true,
+		"html": false,
+		"__experimentalBorder": {
+			"color": true,
+			"radius": true,
+			"style": true,
+			"width": true,
+			"__experimentalDefaultControls": {
+				"color": true,
+				"radius": true,
+				"style": true,
+				"width": true
+			}
+		},
+		"color": {
+			"background": true
+		},
+		"layout": {
+			"default": {
+				"type": "flex",
+				"orientation": "vertical"
+			}
+		},
+		"spacing": {
+			"margin": true,
+			"padding": true,
+			"blockGap": true
+		},
+		"typography": {
+			"fontSize": true,
+			"lineHeight": true,
+			"textAlign": true
+		},
+		"pronamicFormControlRequired": true,
+		"pronamicFormsAutoGenerateName": true
+	},
+	"textdomain": "pronamic-forms",
+	"style": "file:style-index.css",
+	"editorScript": "file:index.js"
+}

@@ -1,0 +1,19 @@
+@use '../scss/mixins';
+
+.wp-block-pronamic-form-radio-field {
+	&.is-style-button {
+		.wp-block-pronamic-form-radio-option {
+			input {
+				@include mixins.visually-hidden;
+			}
+
+			@include mixins.option-button;
+		}
+	}
+
+	&.is-style-toggle-switch {
+		.wp-block-pronamic-form-radio-option {
+			@include mixins.toggle-switch-control();
+		}
+	}
+}

@@ -1,0 +1,71 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "pronamic/form-label",
+  "version": "1.0.0",
+  "title": "Form label",
+  "category": "pronamic-forms",
+  "ancestor": [
+    "pronamic/form"
+  ],
+  "icon": "feedback",
+  "description": "",
+  "attributes": {
+    "tagName": {
+      "type": "string",
+      "default": "label"
+    },
+    "content": {
+      "type": "rich-text",
+      "source": "rich-text",
+      "selector": "label, span"
+    },
+    "htmlFor": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "example": {
+    "attributes": {
+      "content": "Label"
+    }
+  },
+  "usesContext": [
+    "pronamic/form-field-id"
+  ],
+  "supports": {
+    "anchor": true,
+    "html": false,
+    "__experimentalBorder": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true,
+      "__experimentalDefaultControls": {
+        "color": true,
+        "radius": true,
+        "style": true,
+        "width": true
+      }
+    },
+    "color": {
+      "background": true
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "textAlign": true,
+      "__experimentalFontStyle": true,
+      "__experimentalFontWeight": true,
+      "__experimentalLetterSpacing": true,
+      "__experimentalTextTransform": true
+    }
+  },
+  "textdomain": "pronamic-forms",
+  "style": "file:style-index.css",
+  "editorScript": "file:index.js"
+}

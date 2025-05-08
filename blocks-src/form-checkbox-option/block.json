@@ -1,0 +1,73 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "pronamic/form-checkbox-option",
+	"version": "1.0.0",
+	"title": "Multiple-choice option",
+	"category": "pronamic-forms",
+	"ancestor": [ "pronamic/form" ],
+	"icon": "feedback",
+	"description": "",
+	"attributes": {
+		"name": {
+			"type": "string",
+			"default": ""
+		},
+		"value": {
+			"type": "string",
+			"default": ""
+		},
+		"label": {
+			"type": "rich-text",
+			"source": "rich-text",
+			"selector": "label"
+		},
+		"checked": {
+			"type": "boolean",
+			"default": false
+		},
+		"paymentAmount": {
+			"type": "string",
+			"deafult": ""
+		}
+	},
+	"usesContext": [
+		"pronamic/form-field-id",
+		"pronamic/form-field-name"
+	],
+	"supports": {
+		"splitting": true,
+		"pronamicFormControlRequired": true,
+		"pronamicFormsAutoGenerateName": true,
+		"pronamicFormsAutoGenerateValue": true,
+		"__experimentalBorder": {
+			"color": true,
+			"radius": true,
+			"style": true,
+			"width": true,
+			"__experimentalDefaultControls": {
+				"color": true,
+				"radius": true,
+				"style": true,
+				"width": true
+			}
+		},
+		"color": {
+			"background": true
+		},
+		"spacing": {
+			"margin": true
+		},
+		"typography": {
+			"fontSize": true,
+			"lineHeight": true,
+			"textAlign": true
+		}
+	},
+	"textdomain": "pronamic-forms",
+	"style": [
+		"pronamic-form-control-style",
+		"file:style-index.css"
+	],
+	"editorScript": "file:./index.js"
+}

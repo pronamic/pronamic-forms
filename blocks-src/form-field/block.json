@@ -1,0 +1,85 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "pronamic/form-field",
+	"version": "1.0.0",
+	"title": "Form field",
+	"category": "pronamic-forms",
+	"ancestor": [ "pronamic/form" ],
+	"icon": "feedback",
+	"description": "",
+	"attributes": {
+		"label": {
+			"type": "rich-text",
+			"source": "rich-text",
+			"selector": ".wp-block-pronamic-form-label label"
+		},
+		"name": {
+			"type": "string",
+			"default": ""
+		},
+		"value": {
+			"type": "string",
+			"default": ""
+		},
+		"type": {
+			"type": "string",
+			"default": "text",
+			"enum": [
+				"text",
+				"textarea",
+				"url",
+				"email",
+				"password",
+				"tel"
+			]
+		},
+		"placeholder": {
+			"type": "string",
+			"default": ""
+		},
+		"required": {
+			"type": "boolean",
+			"default": false
+		},
+		"reference": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"providesContext": {
+		"pronamic/form-field-id": "id",
+		"pronamic/form-field-name": "name"
+	},
+	"example": {
+		"attributes": {
+			"label": "Label",
+			"type": "text"
+		}
+	},
+	"supports": {
+		"anchor": true,
+		"html": false,
+		"color": {
+			"background": true
+		},
+		"spacing": {
+			"margin": true,
+			"padding": true
+		},
+		"typography": {
+			"fontSize": true,
+			"lineHeight": true,
+			"textAlign": true
+		},
+		"pronamicFormControlRequired": true,
+		"pronamicFormsAutoGenerateName": true
+	},
+	"textdomain": "pronamic-forms",
+	"editorScript": "file:index.js",
+	"style": [
+		"pronamic-form-control-style",
+		"pronamic-form-label-style",
+		"file:style-index.css"
+	]
+}

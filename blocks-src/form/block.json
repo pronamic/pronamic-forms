@@ -1,0 +1,97 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "pronamic/form",
+	"version": "1.0.0",
+	"title": "Pronamic form",
+	"category": "pronamic-forms",
+	"allowedBlocks": [
+		"core/buttons",
+		"core/paragraph",
+		"core/heading",
+		"core/group",
+		"core/columns",
+		"pronamic/form-checkbox-field",
+		"pronamic/form-control",
+		"pronamic/form-field",
+		"pronamic/form-radio-field",
+		"pronamic/form-label",
+		"pronamic/form-submission-notification",
+		"pronamic/hidden-payment-amount"
+	],
+	"description": "The Pronamic Form block makes it easy to add custom forms to your WordPress site.",
+	"icon": "feedback",
+	"keywords": [ "form", "payment", "pronamic", "pronamic-pay" ],
+	"attributes": {
+		"result": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"providesContext": {
+		"pronamic/form-result": "result"
+	},
+	"example": {
+		"attributes": {},
+		"innerBlocks": [
+			{
+				"name": "pronamic/form-field",
+				"attributes": {
+					"label": "Name",
+					"type": "text"
+				}
+			},
+			{
+				"name": "pronamic/form-field",
+				"attributes": {
+					"label": "Email",
+					"type": "email"
+				}
+			},
+			{
+				"name": "pronamic/form-field",
+				"attributes": {
+					"label": "Message",
+					"type": "textarea"
+				}
+			},
+			{
+				"name": "core/buttons",
+				"innerBlocks": [
+					{
+						"name": "core/button",
+						"attributes": {
+							"tagName": "button",
+							"type": "submit",
+							"text": "Submit"
+						}
+					}
+				]
+			}
+		]
+	},
+	"supports": {
+		"__experimentalLayout": {
+			"default": "flex"
+		},
+		"color": true,
+		"html": false,
+		"spacing": {
+			"margin": true,
+			"padding": true,
+			"blockGap": true,
+			"__experimentalDefaultControls": {
+				"padding": true,
+				"blockGap": true
+			}
+		},
+		"typography": {
+			"fontSize": true,
+			"lineHeight": true,
+			"textAlign": true
+		}
+	},
+	"textdomain": "pronamic-forms",
+	"style": "file:style-index.css",
+	"editorScript": "file:index.js"
+}

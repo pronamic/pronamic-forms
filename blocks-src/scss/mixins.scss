@@ -1,0 +1,150 @@
+@use 'variables';
+
+/**
+ * Hide content visually while keeping it accessible to assistive technologies.
+ *
+ * @link https://www.w3.org/WAI/tutorials/forms/labels/
+ * @link https://kittygiraudel.com/2016/10/13/css-hide-and-seek/
+ */
+@mixin visually-hidden() {
+	border: 0;
+	clip: rect(0 0 0 0);
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+}
+
+/**
+ * Button style for radio and checkbox options.
+ */
+@mixin option-button() {
+	background-color: var(--pronamic-form-control-background-color);
+	border: 1px solid var(--pronamic-form-control-border-color);
+	border-radius: var(--pronamic-form-control-border-radius);
+	color: var(--pronamic-color-contrast);
+	transition: border-color .2s;
+	text-align: center;
+
+	label {
+		cursor: pointer;
+		display: block;
+		margin: 0;
+		padding: .5em 1.5em;
+	}
+
+	&:has(input:checked) {
+		border-color: var(--pronamic-form-control-background-color-focus);
+	}
+}
+
+/**
+ * Toggle switch style for radio and checkbox fields.
+ *
+ * The size can be changed by adjusting the `--pronamic-toggle-switch-control-size` variable.
+ */
+ @mixin toggle-switch-control() {
+	--pronamic-toggle-switch-control-size: 1.5em;
+
+	input {
+		appearance: none;
+		background: var(--pronamic-color-neutral);
+		border: 0;
+		border-radius: 9999px;
+		cursor: pointer;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		width: calc(var(--pronamic-toggle-switch-control-size) * 2);
+		height: var(--pronamic-toggle-switch-control-size);
+
+		&::before {
+			display: none;
+		}
+
+		&::after {
+			background: var(--pronamic-color-base);
+			border-radius: 9999px;
+			content: '';
+			position: absolute;
+			top: .125rem;
+			left: .125rem;
+			transition: .2s;
+			width: calc(var(--pronamic-toggle-switch-control-size) - .25rem);
+			height: calc(var(--pronamic-toggle-switch-control-size) - .25rem);
+		}
+
+		&:checked {
+			background: var(--pronamic-color-contrast);
+
+			&::after {
+				transform: translateX(calc(100% + .25rem));
+			}
+		}
+	}
+
+	label {
+		@include visually-hidden;
+	}
+}
+
+/**
+ * Default styles for the radio and checkbox fields.
+ *
+ * The size and position is calculated based on the em unit, so we set the font-size to inherit on the input.
+ */
+ @mixin base-toggle-input() {
+	--pronamic-toggle-switch-control-size: 1.25em;
+
+	appearance: none;
+	background-color: var(--pronamic-form-control-background-color);
+	border: 1px solid var(--pronamic-form-control-border-color);
+	cursor: pointer;
+	display: inline-block;
+	font-size: inherit;
+	outline: 0;
+	margin: 0 .25em 0 0;
+	padding: 0;
+	position: relative;
+	transition: border-color .4s;
+	user-select: none;
+	vertical-align: text-bottom;
+	width: var(--pronamic-toggle-switch-control-size);
+	height: var(--pronamic-toggle-switch-control-size);
+
+	&::before {
+		background-color: transparent;
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: calc(var(--pronamic-toggle-switch-control-size) / 2);
+		height: calc(var(--pronamic-toggle-switch-control-size) / 2);
+		transition: background-color .2s;
+	}
+
+	&:checked {
+		border-color: var(--pronamic-color-contrast);
+
+		&[type=radio]:before,
+		&[type=checkbox] {
+			background-color: var(--pronamic-color-contrast);
+		}
+	}
+ }
+
+ @mixin input-option() {
+	position: relative;
+
+	input {
+		@include base-toggle-input();
+	}
+
+	label {
+		cursor: pointer;
+		margin: 0;
+	}
+}

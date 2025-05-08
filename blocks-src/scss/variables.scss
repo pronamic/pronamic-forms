@@ -1,0 +1,18 @@
+:root {
+	/**
+	 * Root colors
+	 *
+	 * First use colors from custom settings in theme.json.
+	 *
+	 * @link https://developer.wordpress.org/news/2023/08/31/adding-and-using-custom-settings-in-theme-json/#a-practical-use-case-styling-form-inputs
+	 */
+	--pronamic-color-base: var(--wp--custom--pronamic--color--base, #fff);
+	--pronamic-color-contrast: var(--wp--custom--pronamic--color--contrast, #000);
+	--pronamic-color-neutral: var(--wp--custom--pronamic--color--neutral, #ccc);
+
+	// Element colors
+	--pronamic-form-control-border-color: var(--pronamic-color-neutral);
+	--pronamic-form-control-background-color: var(--pronamic-color-base);
+	--pronamic-form-control-background-color-focus: var(--pronamic-color-contrast);
+	--pronamic-form-control-border-radius: .25em;
+}

@@ -1,0 +1,24 @@
+{
+	"core": null,
+	"plugins": [
+		"pronamic/wp-env-quick-login",
+		"https://downloads.wordpress.org/plugin/code-profiler.zip",
+		"https://downloads.wordpress.org/plugin/log-http-requests.zip",
+		"https://downloads.wordpress.org/plugin/one-time-login.zip",
+		"https://downloads.wordpress.org/plugin/plugin-check.zip",
+		"https://downloads.wordpress.org/plugin/pronamic-client.zip",
+		"https://downloads.wordpress.org/plugin/pronamic-ideal.zip",
+		"https://downloads.wordpress.org/plugin/query-monitor.zip",
+		"https://downloads.wordpress.org/plugin/safe-svg.zip",
+		"https://downloads.wordpress.org/plugin/wp-rest-api-log.zip"
+	],
+	"mappings": {
+		"wp-content/plugins/advanced-custom-fields-pro": "pronamic/advanced-custom-fields-pro",
+		"wp-content/plugins/gravityforms": "pronamic/gravityforms",
+		"wp-content/plugins/block-visibility": "https://downloads.wordpress.org/plugin/block-visibility.zip",
+		"wp-content/plugins/doneren-met-mollie": "https://downloads.wordpress.org/plugin/doneren-met-mollie.zip",
+		"wp-content/plugins/gutenberg": "https://downloads.wordpress.org/plugin/gutenberg.zip",
+		"wp-content/plugins/jetpack": "https://downloads.wordpress.org/plugin/jetpack.zip",
+		"wp-content/plugins/pronamic-forms-dev": "./"
+	}
+}

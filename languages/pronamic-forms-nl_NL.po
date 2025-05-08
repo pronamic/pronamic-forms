@@ -1,0 +1,538 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Pronamic Forms 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/pronamic-forms\n"
+"POT-Creation-Date: 2025-04-16T14:53:52+00:00\n"
+"PO-Revision-Date: 2025-04-16 16:54+0200\n"
+"Last-Translator: Remco Tolsma <info@remcotolsma.nl>\n"
+"Language-Team: \n"
+"Language: nl_NL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.6\n"
+"X-Domain: pronamic-forms\n"
+
+#. Plugin Name of the plugin
+#: pronamic-forms.php php/BlockEditorController.php:39
+msgid "Pronamic Forms"
+msgstr "Pronamic Forms"
+
+#. Plugin URI of the plugin
+#: pronamic-forms.php
+msgid "https://www.pronamic.eu/plugins/pronamic-forms/"
+msgstr "https://www.pronamic.nl/plugins/pronamic-forms/"
+
+#. Description of the plugin
+#: pronamic-forms.php
+msgid ""
+"Pronamic Forms is a powerful WordPress plugin and library that allows you to "
+"create and manage customizable forms, powered by WordPress blocks and new "
+"WordPress APIs like the Interactivity and HTML APIs. Easily build forms for "
+"donations, orders, and more using Gutenberg blocks, and handle payments "
+"seamlessly with the Pronamic Pay platform."
+msgstr ""
+"Pronamic Forms is een krachtige WordPress-plugin en bibliotheek waarmee je "
+"aanpasbare formulieren kunt maken en beheren, aangestuurd door WordPress-"
+"blokken en nieuwe WordPress-API’s zoals de Interactivity- en HTML-API’s. "
+"Bouw eenvoudig formulieren voor donaties, bestellingen en meer met behulp "
+"van Gutenberg-blokken en verwerk betalingen naadloos met het Pronamic Pay-"
+"platform."
+
+#. Author of the plugin
+#: pronamic-forms.php
+msgid "Pronamic"
+msgstr "Pronamic"
+
+#. Author URI of the plugin
+#: pronamic-forms.php
+msgid "https://www.pronamic.eu/"
+msgstr "https://www.pronamic.nl/"
+
+#: patterns/contact-form.php:16 patterns/donation-form.php:16
+#: patterns/order-form.php:16 patterns/product-configurator-form.php:16
+#: blocks/form-submission-notification/index.js:1 blocks/form/index.js:1
+msgid "Your form has been submitted successfully."
+msgstr "Je formulier is succesvol verzonden."
+
+#: patterns/contact-form.php:22 patterns/donation-form.php:22
+#: patterns/order-form.php:22 patterns/product-configurator-form.php:22
+#: blocks/form-submission-notification/index.js:1 blocks/form/index.js:1
+msgid "There was an error submitting your form."
+msgstr "Er is een fout opgetreden bij het verzenden van je formulier."
+
+#: patterns/contact-form.php:27 blocks/form-checkbox-field/index.js:1
+#: blocks/form-control/index.js:1 blocks/form-field/index.js:1
+#: blocks/form-radio-field/index.js:1 blocks/form/index.js:1
+msgid "Name"
+msgstr "Naam"
+
+#: patterns/contact-form.php:31 blocks/form/index.js:1
+msgid "Email"
+msgstr "E-mail"
+
+#: patterns/contact-form.php:35 blocks/form/index.js:1
+msgid "Subject"
+msgstr "Onderwerp"
+
+#: patterns/contact-form.php:39 blocks/form/index.js:1
+msgid "Message"
+msgstr "Bericht"
+
+#: patterns/contact-form.php:44 blocks/form/index.js:1
+msgid "Submit"
+msgstr "Verzenden"
+
+#: patterns/product-configurator-form.php:27
+msgctxt "Product configurator form pattern"
+msgid "Bookcase"
+msgstr "Boekenkast"
+
+#: patterns/product-configurator-form.php:31
+msgctxt "Product configurator form pattern"
+msgid "Standard bookcase"
+msgstr "Standaard boekenkast"
+
+#: patterns/product-configurator-form.php:37
+msgctxt "Product configurator form pattern"
+msgid "Extras"
+msgstr "Extra’s"
+
+#: patterns/product-configurator-form.php:41
+msgctxt "Product configurator form pattern"
+msgid "Add extra options:"
+msgstr "Voeg extra opties toe:"
+
+#: patterns/product-configurator-form.php:42
+msgctxt "Product configurator form pattern"
+msgid "Doors"
+msgstr "Deuren"
+
+#: patterns/product-configurator-form.php:46
+msgctxt "Product configurator form pattern"
+msgid "Back panel"
+msgstr "Achterpaneel"
+
+#: patterns/product-configurator-form.php:50
+msgctxt "Product configurator form pattern"
+msgid "Wheels"
+msgstr "Wielen"
+
+#: patterns/product-configurator-form.php:55
+msgctxt "Product configurator form pattern"
+msgid "Billing details"
+msgstr "Factuurgegevens"
+
+#: patterns/product-configurator-form.php:61
+msgid "First Name"
+msgstr "Voornaam"
+
+#: patterns/product-configurator-form.php:67
+msgid "Last Name"
+msgstr "Achternaam"
+
+#: patterns/product-configurator-form.php:73
+msgid "Email Address"
+msgstr "E-mailadres"
+
+#: patterns/product-configurator-form.php:77
+msgctxt "Product configurator form pattern"
+msgid "Message"
+msgstr "Bericht"
+
+#: patterns/product-configurator-form.php:82
+msgctxt "Product configurator form pattern"
+msgid "Place order"
+msgstr "Bestelling plaatsen"
+
+#: php/BlockPatternCategoriesController.php:35
+msgid "Pronamic forms"
+msgstr "Pronamic formulieren"
+
+#: php/BlockPatternsController.php:35
+msgid "Contact form"
+msgstr "Contactformulier"
+
+#: php/BlockPatternsController.php:54
+msgid "Donation form"
+msgstr "Donatieformulier"
+
+#: php/BlockPatternsController.php:75
+msgid "Order form"
+msgstr "Bestelformulier"
+
+#: php/BlockPatternsController.php:97
+msgid "Product configurator form"
+msgstr "Productconfiguratieformulier"
+
+#: php/BlockTypesController.php:128
+msgid "Button"
+msgstr "Knop"
+
+#: php/BlockTypesController.php:139
+msgid "Toggle switch"
+msgstr "Tuimelschakelaar"
+
+#: php/BlockTypesController.php:318
+msgid "Form submit button"
+msgstr "Formulier verzendknop"
+
+#. translators: 1: date format, 2: time format
+#: php/FormSubmissionProcessor.php:33
+msgctxt "date time format"
+msgid "%1$s %2$s"
+msgstr "%1$s %2$s"
+
+#. translators: %s: formatted date
+#: php/FormSubmissionProcessor.php:75
+msgid "Entry – %s"
+msgstr "Inzending – %s"
+
+#: php/PayController.php:342
+msgid "Pronamic Forms Entry"
+msgstr "Pronamic Forms inzending"
+
+#: php/PostTypesController.php:38
+msgid "Submissions"
+msgstr "Inzendingen"
+
+#: php/PostTypesController.php:59
+msgid "Origin"
+msgstr "Oorsprong"
+
+#: blocks/form-checkbox-field/index.js:1 blocks/form-checkbox-option/index.js:1
+#: blocks/form-control/index.js:1 blocks/form-field/index.js:1
+#: blocks/form-label/index.js:1 blocks/form-radio-field/index.js:1
+#: blocks/form-radio-option/index.js:1 blocks/hidden-payment-amount/index.js:1
+msgid "Settings"
+msgstr "Instellingen"
+
+#: blocks/form-checkbox-field/index.js:1 blocks/form-control/index.js:1
+#: blocks/form-field/index.js:1 blocks/form-radio-field/index.js:1
+msgid "Required"
+msgstr "Vereist"
+
+#: blocks/form-checkbox-field/index.js:1 blocks/form-control/index.js:1
+#: blocks/form-field/index.js:1 blocks/form-radio-field/index.js:1
+msgid "Select this option to make the input required."
+msgstr "Selecteer deze optie om de invoer verplicht te maken."
+
+#: blocks/form-checkbox-field/index.js:1 blocks/form-control/index.js:1
+#: blocks/form-field/index.js:1 blocks/form-radio-field/index.js:1
+#: blocks/form-radio-option/index.js:1
+msgid "Reference"
+msgstr "Referentie"
+
+#: blocks/form-checkbox-field/index.js:1 blocks/form-checkbox-option/index.js:1
+#: blocks/form-field/index.js:1 blocks/form-label/index.js:1
+#: blocks/form-radio-field/index.js:1 blocks/form-radio-option/index.js:1
+msgid "Enter label…"
+msgstr "Voer label in…"
+
+#: blocks/form-checkbox-option/index.js:1 blocks/form-field/index.js:1
+#: blocks/form-radio-option/index.js:1 blocks/hidden-payment-amount/index.js:1
+msgid "Payment amount"
+msgstr "Betalingsbedrag"
+
+#: blocks/form-control/index.js:1
+msgid "Type"
+msgstr "Type"
+
+#: blocks/form-control/index.js:1
+msgid "Text"
+msgstr "Tekst"
+
+#: blocks/form-control/index.js:1
+msgid "Textarea"
+msgstr "Tekstvak"
+
+#: blocks/form-control/index.js:1 blocks/form-field/index.js:1
+msgid "Password"
+msgstr "Wachtwoord"
+
+#: blocks/form-control/index.js:1
+msgid "URL"
+msgstr "URL"
+
+#: blocks/form-control/index.js:1 blocks/form-field/index.js:1
+msgid "Email address"
+msgstr "E-mailadres"
+
+#: blocks/form-control/index.js:1 blocks/form-field/index.js:1
+msgid "Telephone number"
+msgstr "Telefoonnummer"
+
+#: blocks/form-control/index.js:1
+msgid "Checkbox"
+msgstr "Selectievakje"
+
+#: blocks/form-control/index.js:1
+msgid "Radio"
+msgstr "Keuzerondje"
+
+#: blocks/form-control/index.js:1 blocks/form-field/index.js:1
+msgid "Placeholder"
+msgstr "Plaatshouder"
+
+#: blocks/form-control/index.js:1 blocks/form-field/index.js:1
+msgid "Text that appears in the form element when no value has been entered."
+msgstr ""
+"Tekst die in het formulierelement verschijnt wanneer er geen waarde is "
+"ingevoerd."
+
+#: blocks/form-control/index.js:1 blocks/form-field/index.js:1
+#: blocks/form-radio-option/index.js:1
+msgid "Value"
+msgstr "Waarde"
+
+#: blocks/form-field/index.js:1
+msgid "Single-line text field"
+msgstr "Tekstveld"
+
+#: blocks/form-field/index.js:1
+msgid "Multi-line text field"
+msgstr "Tekstvak"
+
+#: blocks/form-field/index.js:1
+msgid ""
+"Multi-line\n"
+"text"
+msgstr ""
+"Meerdere regels\n"
+"tekst"
+
+#: blocks/form-field/index.js:1
+msgid "URL field"
+msgstr "URL-veld"
+
+#: blocks/form-field/index.js:1
+msgid "Website"
+msgstr "Website"
+
+#: blocks/form-field/index.js:1
+msgid "https://www.example.com/"
+msgstr "https://www.example.com/"
+
+#: blocks/form-field/index.js:1
+msgid "Telephone number field"
+msgstr "Telefoonnummerveld"
+
+#: blocks/form-field/index.js:1
+msgid "555-0100"
+msgstr "555-0100"
+
+#: blocks/form-field/index.js:1
+msgid "Email address field"
+msgstr "E-mailadresveld"
+
+#: blocks/form-field/index.js:1
+msgid "john.doe@example.com"
+msgstr "john.doe@example.com"
+
+#: blocks/form-field/index.js:1
+msgid "Password field"
+msgstr "Wachtwoordveld"
+
+#: blocks/form-field/index.js:1
+msgid "Payment amount field"
+msgstr "Bedragveld"
+
+#: blocks/form-label/index.js:1
+msgid "HTML element"
+msgstr "HTML-element"
+
+#: blocks/form-label/index.js:1
+msgid "Default (<label>)"
+msgstr "Standaard (<label>)"
+
+#: blocks/form-label/index.js:1
+msgid "For"
+msgstr "Voor"
+
+#: blocks/form-radio-field/index.js:1
+msgid "Payment method field"
+msgstr "Betaalmethodeveld"
+
+#: blocks/form-radio-field/index.js:1
+msgid "payment method"
+msgstr "betaalmethode"
+
+#: blocks/form-radio-field/index.js:1 blocks/form-radio-option/index.js:1
+msgid "Bancontact"
+msgstr "Bancontact"
+
+#: blocks/form-radio-field/index.js:1 blocks/form-radio-option/index.js:1
+msgid "Card"
+msgstr "Kaart"
+
+#: blocks/form-radio-field/index.js:1 blocks/form-radio-option/index.js:1
+msgid "iDEAL"
+msgstr "iDEAL"
+
+#: blocks/form-radio-field/index.js:1
+msgid "Payment method"
+msgstr "Betaalmethode"
+
+#: blocks/form-radio-field/index.js:1
+msgid "Subscription frequency choice field"
+msgstr "Abonnementsfrequentie keuzeveld"
+
+#: blocks/form-radio-field/index.js:1 blocks/form-radio-option/index.js:1
+msgid "frequency"
+msgstr "frequentie"
+
+#: blocks/form-radio-field/index.js:1 blocks/form-radio-option/index.js:1
+msgid "interval"
+msgstr "interval"
+
+#: blocks/form-radio-field/index.js:1 blocks/form-radio-option/index.js:1
+msgid "recurrence"
+msgstr "herhaling"
+
+#: blocks/form-radio-field/index.js:1 blocks/form-radio-option/index.js:1
+msgid "subscription"
+msgstr "abonnement"
+
+#: blocks/form-radio-field/index.js:1 blocks/form-radio-option/index.js:1
+msgid "Once"
+msgstr "Eenmaal"
+
+#: blocks/form-radio-field/index.js:1 blocks/form-radio-option/index.js:1
+msgid "Monthly"
+msgstr "Maandelijks"
+
+#: blocks/form-radio-field/index.js:1 blocks/form-radio-option/index.js:1
+msgid "Yearly"
+msgstr "Jaarlijks"
+
+#: blocks/form-radio-field/index.js:1 blocks/form-radio-option/index.js:1
+msgid "Annual"
+msgstr "Jaarlijks"
+
+#: blocks/form-radio-field/index.js:1
+msgid "Frequency"
+msgstr "Frequentie"
+
+#: blocks/form-radio-option/index.js:1
+msgid "Bancontact payment method"
+msgstr "Bancontact-betaalmethode"
+
+#: blocks/form-radio-option/index.js:1
+msgid "Card payment method"
+msgstr "Kaart-betaalmethode"
+
+#: blocks/form-radio-option/index.js:1
+msgid "iDEAL payment method"
+msgstr "iDEAL-betaalmethode"
+
+#: blocks/form-radio-option/index.js:1
+msgid "One-time payment"
+msgstr "Eenmalige betaling"
+
+#: blocks/form-radio-option/index.js:1
+msgid "Monthly payment"
+msgstr "Maandelijkse betaling"
+
+#: blocks/form-radio-option/index.js:1
+msgid "Yearly payment"
+msgstr "Jaarlijkse betaling"
+
+#: blocks/form-submission-notification/index.js:1
+msgid "Form submission success"
+msgstr "Formulier inzending geslaagd"
+
+#: blocks/form-submission-notification/index.js:1
+msgid "Success message for form submissions."
+msgstr "Succes bericht voor formulier inzendingen."
+
+#: blocks/form-submission-notification/index.js:1
+msgid "Form submission error"
+msgstr "Formulier inzending mislukt"
+
+#: blocks/form-submission-notification/index.js:1
+msgid "Error/failure message for form submissions."
+msgstr "Fout/mislukking bericht voor formulier inzendingen."
+
+#: blocks/form-checkbox-field/block.json
+msgctxt "block title"
+msgid "Multiple-choice field"
+msgstr "Meerkeuzeveld"
+
+#: blocks/form-checkbox-option/block.json
+msgctxt "block title"
+msgid "Multiple-choice option"
+msgstr "Meerkeuzeoptie"
+
+#: blocks/form-control/block.json
+msgctxt "block title"
+msgid "Form control"
+msgstr "Formulierelement"
+
+#: blocks/form-field/block.json
+msgctxt "block title"
+msgid "Form field"
+msgstr "Formulierveld"
+
+#: blocks/form-label/block.json
+msgctxt "block title"
+msgid "Form label"
+msgstr "Formulierlabel"
+
+#: blocks/form-radio-field/block.json
+msgctxt "block title"
+msgid "Single-choice field"
+msgstr "Keuzeveld"
+
+#: blocks/form-radio-option/block.json
+msgctxt "block title"
+msgid "Single-choice option"
+msgstr "Keuzeoptie"
+
+#: blocks/form-submission-notification/block.json
+msgctxt "block title"
+msgid "Form submission notification"
+msgstr "Formulier verzenden melding"
+
+#: blocks/form/block.json
+msgctxt "block title"
+msgid "Pronamic form"
+msgstr "Pronamic formulier"
+
+#: blocks/form/block.json
+msgctxt "block description"
+msgid ""
+"The Pronamic Form block makes it easy to add custom forms to your WordPress "
+"site."
+msgstr ""
+"Het Pronamic formulier-blok maakt het eenvoudig om aangepaste formulieren "
+"aan je WordPress-site toe te voegen."
+
+#: blocks/form/block.json
+msgctxt "block keyword"
+msgid "form"
+msgstr "formulier"
+
+#: blocks/form/block.json
+msgctxt "block keyword"
+msgid "payment"
+msgstr "betaling"
+
+#: blocks/form/block.json
+msgctxt "block keyword"
+msgid "pronamic"
+msgstr "pronamic"
+
+#: blocks/form/block.json
+msgctxt "block keyword"
+msgid "pronamic-pay"
+msgstr "pronamic-pay"
+
+#: blocks/hidden-payment-amount/block.json
+msgctxt "block title"
+msgid "Hidden payment amount"
+msgstr "Verborgen bedrag"
+
+#: blocks/hidden-payment-amount/block.json
+msgctxt "block description"
+msgid "Hidden payment amount for payment forms."
+msgstr "Verborgen betalingsbedrag voor betalingsformulieren."
