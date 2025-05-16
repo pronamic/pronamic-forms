@@ -45,7 +45,7 @@
 			"rsync --recursive --verbose ./blocks/ ./build/stage-1/blocks/",
 			"rsync --recursive --verbose --exclude-from=.distignore ./build/stage-1/ ./build/stage-2/",
 			"vendor/bin/wp i18n make-pot ./build/stage-2/ --slug=pronamic-forms",
-			"vendor/bin/wp i18n make-json ./build/stage-2/languages/*.po --no-purge",
+			"vendor/bin/wp i18n make-json ./build/stage-2/languages --no-purge",
 			"vendor/bin/wp i18n make-mo ./build/stage-2/languages/",
 			"vendor/bin/wp dist-archive ./build/stage-2/ --plugin-dirname=pronamic-forms"
 		],
@@ -55,8 +55,7 @@
 		"translate": [
 			"@build",
 			"rsync --recursive --delete --verbose ./build/stage-2/languages/ ./languages/",
-			"@update-po"
-		],
-		"update-po": "find languages/*.po -type f -exec msgmerge --update --backup=off {} languages/pronamic-forms.pot \\;"
+			"vendor/bin/wp i18n update-po ./languages/pronamic-forms.pot"
+		]
 	}
 }

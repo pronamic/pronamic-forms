@@ -2,16 +2,16 @@
 # This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Pronamic Forms 1.0.0-rc.1\n"
+"Project-Id-Version: Pronamic Forms 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/pronamic-forms\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-04-16T14:53:52+00:00\n"
+"POT-Creation-Date: 2025-05-16T13:24:32+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.11.0\n"
+"X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: pronamic-forms\n"
 
 #. Plugin Name of the plugin
@@ -183,17 +183,59 @@ msgstr ""
 
 #. translators: 1: date format, 2: time format
 #: php/FormSubmissionProcessor.php:33
+#, php-format
 msgctxt "date time format"
 msgid "%1$s %2$s"
 msgstr ""
 
 #. translators: %s: formatted date
 #: php/FormSubmissionProcessor.php:75
+#, php-format
 msgid "Entry – %s"
 msgstr ""
 
 #: php/PayController.php:342
 msgid "Pronamic Forms Entry"
+msgstr ""
+
+#: php/PaymentMethodBlocksController.php:85
+msgid "Bancontact payment method"
+msgstr ""
+
+#: php/PaymentMethodBlocksController.php:86
+#: php/PaymentMethodBlocksController.php:174
+msgid "Bancontact"
+msgstr ""
+
+#: php/PaymentMethodBlocksController.php:90
+msgid "Card payment method"
+msgstr ""
+
+#: php/PaymentMethodBlocksController.php:91
+#: php/PaymentMethodBlocksController.php:175
+msgid "Card"
+msgstr ""
+
+#: php/PaymentMethodBlocksController.php:95
+msgid "iDEAL payment method"
+msgstr ""
+
+#: php/PaymentMethodBlocksController.php:96
+#: php/PaymentMethodBlocksController.php:176
+msgid "iDEAL"
+msgstr ""
+
+#: php/PaymentMethodBlocksController.php:171
+msgid "Payment method field"
+msgstr ""
+
+#: php/PaymentMethodBlocksController.php:173
+msgid "payment method"
+msgstr ""
+
+#: php/PaymentMethodBlocksController.php:179
+#: php/PaymentMethodBlocksController.php:186
+msgid "Payment method"
 msgstr ""
 
 #: php/PostTypesController.php:38
@@ -371,33 +413,6 @@ msgid "For"
 msgstr ""
 
 #: blocks/form-radio-field/index.js:1
-msgid "Payment method field"
-msgstr ""
-
-#: blocks/form-radio-field/index.js:1
-msgid "payment method"
-msgstr ""
-
-#: blocks/form-radio-field/index.js:1
-#: blocks/form-radio-option/index.js:1
-msgid "Bancontact"
-msgstr ""
-
-#: blocks/form-radio-field/index.js:1
-#: blocks/form-radio-option/index.js:1
-msgid "Card"
-msgstr ""
-
-#: blocks/form-radio-field/index.js:1
-#: blocks/form-radio-option/index.js:1
-msgid "iDEAL"
-msgstr ""
-
-#: blocks/form-radio-field/index.js:1
-msgid "Payment method"
-msgstr ""
-
-#: blocks/form-radio-field/index.js:1
 msgid "Subscription frequency choice field"
 msgstr ""
 
@@ -443,18 +458,6 @@ msgstr ""
 
 #: blocks/form-radio-field/index.js:1
 msgid "Frequency"
-msgstr ""
-
-#: blocks/form-radio-option/index.js:1
-msgid "Bancontact payment method"
-msgstr ""
-
-#: blocks/form-radio-option/index.js:1
-msgid "Card payment method"
-msgstr ""
-
-#: blocks/form-radio-option/index.js:1
-msgid "iDEAL payment method"
 msgstr ""
 
 #: blocks/form-radio-option/index.js:1
