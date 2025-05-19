@@ -4,5 +4,8 @@
 # Composer
 /vendor/
 
+# Blocks
+/blocks/
+
 # Build
 /build/
