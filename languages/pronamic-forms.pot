@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-05-19T07:24:49+00:00\n"
+"POT-Creation-Date: 2025-05-20T12:58:19+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: pronamic-forms\n"
@@ -59,6 +59,7 @@ msgid "There was an error submitting your form."
 msgstr ""
 
 #: patterns/contact-form.php:27
+#: patterns/donation-form.php:27
 #: blocks/form-checkbox-field/index.js:1
 #: blocks/form-control/index.js:1
 #: blocks/form-field/index.js:1
@@ -78,6 +79,8 @@ msgid "Subject"
 msgstr ""
 
 #: patterns/contact-form.php:39
+#: patterns/donation-form.php:35
+#: patterns/order-form.php:47
 #: blocks/form/index.js:1
 msgid "Message"
 msgstr ""
@@ -85,6 +88,93 @@ msgstr ""
 #: patterns/contact-form.php:44
 #: blocks/form/index.js:1
 msgid "Submit"
+msgstr ""
+
+#: patterns/donation-form.php:31
+#: patterns/order-form.php:43
+#: patterns/product-configurator-form.php:73
+#: blocks/form-control/index.js:1
+#: blocks/form-field/index.js:1
+msgid "Email address"
+msgstr ""
+
+#: patterns/donation-form.php:39
+#: blocks/form-radio-field/index.js:1
+msgid "Frequency"
+msgstr ""
+
+#: patterns/donation-form.php:40
+#: blocks/form-radio-field/index.js:1
+#: blocks/form-radio-option/index.js:1
+msgid "Once"
+msgstr ""
+
+#: patterns/donation-form.php:44
+#: blocks/form-radio-field/index.js:1
+#: blocks/form-radio-option/index.js:1
+msgid "Monthly"
+msgstr ""
+
+#: patterns/donation-form.php:48
+#: blocks/form-radio-field/index.js:1
+#: blocks/form-radio-option/index.js:1
+msgid "Yearly"
+msgstr ""
+
+#: patterns/donation-form.php:53
+msgctxt "payment amount"
+msgid "Amount"
+msgstr ""
+
+#: patterns/donation-form.php:57
+#: php/PaymentMethodBlocksController.php:179
+#: php/PaymentMethodBlocksController.php:186
+msgid "Payment method"
+msgstr ""
+
+#: patterns/donation-form.php:58
+#: php/PaymentMethodBlocksController.php:86
+#: php/PaymentMethodBlocksController.php:174
+msgid "Bancontact"
+msgstr ""
+
+#: patterns/donation-form.php:62
+#: php/PaymentMethodBlocksController.php:91
+#: php/PaymentMethodBlocksController.php:175
+msgid "Card"
+msgstr ""
+
+#: patterns/donation-form.php:66
+#: php/PaymentMethodBlocksController.php:96
+#: php/PaymentMethodBlocksController.php:176
+msgid "iDEAL"
+msgstr ""
+
+#: patterns/donation-form.php:71
+msgid "By making a recurring donation, you authorize automatic collection of future payments. For Bancontact, iDEAL, and SOFORT Banking, future payments will be collected via SEPA direct debit."
+msgstr ""
+
+#: patterns/donation-form.php:76
+msgid "Donate"
+msgstr ""
+
+#: patterns/order-form.php:27
+msgid "One-time"
+msgstr ""
+
+#: patterns/order-form.php:34
+#: patterns/product-configurator-form.php:61
+msgid "First name"
+msgstr ""
+
+#: patterns/order-form.php:38
+#: patterns/product-configurator-form.php:67
+msgid "Last name"
+msgstr ""
+
+#: patterns/order-form.php:52
+msgctxt "button text to place an order"
+msgid "Order"
 msgstr ""
 
 #: patterns/product-configurator-form.php:27
@@ -125,18 +215,6 @@ msgstr ""
 #: patterns/product-configurator-form.php:55
 msgctxt "Product configurator form pattern"
 msgid "Billing details"
-msgstr ""
-
-#: patterns/product-configurator-form.php:61
-msgid "First Name"
-msgstr ""
-
-#: patterns/product-configurator-form.php:67
-msgid "Last Name"
-msgstr ""
-
-#: patterns/product-configurator-form.php:73
-msgid "Email Address"
 msgstr ""
 
 #: patterns/product-configurator-form.php:77
@@ -194,35 +272,16 @@ msgstr ""
 msgid "Entry – %s"
 msgstr ""
 
-#: php/PayController.php:342
-msgid "Pronamic Forms Entry"
-msgstr ""
-
 #: php/PaymentMethodBlocksController.php:85
 msgid "Bancontact payment method"
-msgstr ""
-
-#: php/PaymentMethodBlocksController.php:86
-#: php/PaymentMethodBlocksController.php:174
-msgid "Bancontact"
 msgstr ""
 
 #: php/PaymentMethodBlocksController.php:90
 msgid "Card payment method"
 msgstr ""
 
-#: php/PaymentMethodBlocksController.php:91
-#: php/PaymentMethodBlocksController.php:175
-msgid "Card"
-msgstr ""
-
 #: php/PaymentMethodBlocksController.php:95
 msgid "iDEAL payment method"
-msgstr ""
-
-#: php/PaymentMethodBlocksController.php:96
-#: php/PaymentMethodBlocksController.php:176
-msgid "iDEAL"
 msgstr ""
 
 #: php/PaymentMethodBlocksController.php:171
@@ -231,11 +290,6 @@ msgstr ""
 
 #: php/PaymentMethodBlocksController.php:173
 msgid "payment method"
-msgstr ""
-
-#: php/PaymentMethodBlocksController.php:179
-#: php/PaymentMethodBlocksController.php:186
-msgid "Payment method"
 msgstr ""
 
 #: php/PostTypesController.php:38
@@ -314,11 +368,6 @@ msgstr ""
 
 #: blocks/form-control/index.js:1
 msgid "URL"
-msgstr ""
-
-#: blocks/form-control/index.js:1
-#: blocks/form-field/index.js:1
-msgid "Email address"
 msgstr ""
 
 #: blocks/form-control/index.js:1
@@ -438,26 +487,7 @@ msgstr ""
 
 #: blocks/form-radio-field/index.js:1
 #: blocks/form-radio-option/index.js:1
-msgid "Once"
-msgstr ""
-
-#: blocks/form-radio-field/index.js:1
-#: blocks/form-radio-option/index.js:1
-msgid "Monthly"
-msgstr ""
-
-#: blocks/form-radio-field/index.js:1
-#: blocks/form-radio-option/index.js:1
-msgid "Yearly"
-msgstr ""
-
-#: blocks/form-radio-field/index.js:1
-#: blocks/form-radio-option/index.js:1
 msgid "Annual"
-msgstr ""
-
-#: blocks/form-radio-field/index.js:1
-msgid "Frequency"
 msgstr ""
 
 #: blocks/form-radio-option/index.js:1

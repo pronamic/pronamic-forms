@@ -58,19 +58,19 @@
 	<!-- wp:columns -->
 	<div class="wp-block-columns"><!-- wp:column -->
 		<div class="wp-block-column"><!-- wp:pronamic/form-field {"required":true} -->
-			<div class="wp-block-pronamic-form-field"><div class="wp-block-pronamic-form-label"><label><?php \esc_html_e( 'First Name', 'pronamic-forms' ); ?></label></div><div class="wp-block-pronamic-form-control"><input required class="wp-block-pronamic-form-control__element" value="" type="text"/></div></div>
+			<div class="wp-block-pronamic-form-field"><div class="wp-block-pronamic-form-label"><label><?php \esc_html_e( 'First name', 'pronamic-forms' ); ?></label></div><div class="wp-block-pronamic-form-control"><input required class="wp-block-pronamic-form-control__element" value="" type="text"/></div></div>
 			<!-- /wp:pronamic/form-field --></div>
 		<!-- /wp:column -->
 
 		<!-- wp:column -->
 		<div class="wp-block-column"><!-- wp:pronamic/form-field {"required":true} -->
-			<div class="wp-block-pronamic-form-field"><div class="wp-block-pronamic-form-label"><label><?php \esc_html_e( 'Last Name', 'pronamic-forms' ); ?></label></div><div class="wp-block-pronamic-form-control"><input required class="wp-block-pronamic-form-control__element" value="" type="text"/></div></div>
+			<div class="wp-block-pronamic-form-field"><div class="wp-block-pronamic-form-label"><label><?php \esc_html_e( 'Last name', 'pronamic-forms' ); ?></label></div><div class="wp-block-pronamic-form-control"><input required class="wp-block-pronamic-form-control__element" value="" type="text"/></div></div>
 			<!-- /wp:pronamic/form-field --></div>
 		<!-- /wp:column --></div>
 	<!-- /wp:columns -->
 
 	<!-- wp:pronamic/form-field {"type":"email","required":true} -->
-	<div class="wp-block-pronamic-form-field"><div class="wp-block-pronamic-form-label"><label><?php \esc_html_e( 'Email Address', 'pronamic-forms' ); ?></label></div><div class="wp-block-pronamic-form-control"><input required class="wp-block-pronamic-form-control__element" value="" type="email"/></div></div>
+	<div class="wp-block-pronamic-form-field"><div class="wp-block-pronamic-form-label"><label><?php \esc_html_e( 'Email address', 'pronamic-forms' ); ?></label></div><div class="wp-block-pronamic-form-control"><input required class="wp-block-pronamic-form-control__element" value="" type="email"/></div></div>
 	<!-- /wp:pronamic/form-field -->
 
 	<!-- wp:pronamic/form-field {"type":"textarea"} -->

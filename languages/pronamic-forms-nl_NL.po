@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Pronamic Forms 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/pronamic-forms\n"
 "POT-Creation-Date: 2025-05-19T07:24:49+00:00\n"
-"PO-Revision-Date: 2025-05-19 09:25+0200\n"
+"PO-Revision-Date: 2025-05-20 15:00+0200\n"
 "Last-Translator: Remco Tolsma <info@remcotolsma.nl>\n"
 "Language-Team: \n"
 "Language: nl_NL\n"
@@ -25,19 +25,8 @@ msgstr "https://www.pronamic.nl/plugins/pronamic-forms/"
 
 #. Description of the plugin
 #: pronamic-forms.php
-msgid ""
-"Pronamic Forms is a powerful WordPress plugin and library that allows you to "
-"create and manage customizable forms, powered by WordPress blocks and new "
-"WordPress APIs like the Interactivity and HTML APIs. Easily build forms for "
-"donations, orders, and more using Gutenberg blocks, and handle payments "
-"seamlessly with the Pronamic Pay platform."
-msgstr ""
-"Pronamic Forms is een krachtige WordPress-plugin en bibliotheek waarmee je "
-"aanpasbare formulieren kunt maken en beheren, aangestuurd door WordPress-"
-"blokken en nieuwe WordPress-API’s zoals de Interactivity- en HTML-API’s. "
-"Bouw eenvoudig formulieren voor donaties, bestellingen en meer met behulp "
-"van Gutenberg-blokken en verwerk betalingen naadloos met het Pronamic Pay-"
-"platform."
+msgid "Pronamic Forms is a powerful WordPress plugin and library that allows you to create and manage customizable forms, powered by WordPress blocks and new WordPress APIs like the Interactivity and HTML APIs. Easily build forms for donations, orders, and more using Gutenberg blocks, and handle payments seamlessly with the Pronamic Pay platform."
+msgstr "Pronamic Forms is een krachtige WordPress-plugin en bibliotheek waarmee je aanpasbare formulieren kunt maken en beheren, aangestuurd door WordPress-blokken en nieuwe WordPress-API’s zoals de Interactivity- en HTML-API’s. Bouw eenvoudig formulieren voor donaties, bestellingen en meer met behulp van Gutenberg-blokken en verwerk betalingen naadloos met het Pronamic Pay-platform."
 
 #. Author of the plugin
 #: pronamic-forms.php
@@ -61,9 +50,10 @@ msgstr "Je formulier is succesvol verzonden."
 msgid "There was an error submitting your form."
 msgstr "Er is een fout opgetreden bij het verzenden van je formulier."
 
-#: patterns/contact-form.php:27 blocks/form-checkbox-field/index.js:1
-#: blocks/form-control/index.js:1 blocks/form-field/index.js:1
-#: blocks/form-radio-field/index.js:1 blocks/form/index.js:1
+#: patterns/contact-form.php:27 patterns/donation-form.php:27
+#: blocks/form-checkbox-field/index.js:1 blocks/form-control/index.js:1
+#: blocks/form-field/index.js:1 blocks/form-radio-field/index.js:1
+#: blocks/form/index.js:1
 msgid "Name"
 msgstr "Naam"
 
@@ -75,7 +65,8 @@ msgstr "E-mail"
 msgid "Subject"
 msgstr "Onderwerp"
 
-#: patterns/contact-form.php:39 blocks/form/index.js:1
+#: patterns/contact-form.php:39 patterns/donation-form.php:35
+#: patterns/order-form.php:47 blocks/form/index.js:1
 msgid "Message"
 msgstr "Bericht"
 
@@ -122,18 +113,6 @@ msgstr "Wielen"
 msgctxt "Product configurator form pattern"
 msgid "Billing details"
 msgstr "Factuurgegevens"
-
-#: patterns/product-configurator-form.php:61
-msgid "First Name"
-msgstr "Voornaam"
-
-#: patterns/product-configurator-form.php:67
-msgid "Last Name"
-msgstr "Achternaam"
-
-#: patterns/product-configurator-form.php:73
-msgid "Email Address"
-msgstr "E-mailadres"
 
 #: patterns/product-configurator-form.php:77
 msgctxt "Product configurator form pattern"
@@ -190,15 +169,11 @@ msgstr "%1$s %2$s"
 msgid "Entry – %s"
 msgstr "Inzending – %s"
 
-#: php/PayController.php:342
-msgid "Pronamic Forms Entry"
-msgstr "Pronamic Forms inzending"
-
 #: php/PaymentMethodBlocksController.php:85
 msgid "Bancontact payment method"
 msgstr "Bancontact-betaalmethode"
 
-#: php/PaymentMethodBlocksController.php:86
+#: patterns/donation-form.php:58 php/PaymentMethodBlocksController.php:86
 #: php/PaymentMethodBlocksController.php:174
 msgid "Bancontact"
 msgstr "Bancontact"
@@ -207,7 +182,7 @@ msgstr "Bancontact"
 msgid "Card payment method"
 msgstr "Kaart-betaalmethode"
 
-#: php/PaymentMethodBlocksController.php:91
+#: patterns/donation-form.php:62 php/PaymentMethodBlocksController.php:91
 #: php/PaymentMethodBlocksController.php:175
 msgid "Card"
 msgstr "Kaart"
@@ -216,7 +191,7 @@ msgstr "Kaart"
 msgid "iDEAL payment method"
 msgstr "iDEAL-betaalmethode"
 
-#: php/PaymentMethodBlocksController.php:96
+#: patterns/donation-form.php:66 php/PaymentMethodBlocksController.php:96
 #: php/PaymentMethodBlocksController.php:176
 msgid "iDEAL"
 msgstr "iDEAL"
@@ -229,7 +204,7 @@ msgstr "Betaalmethodeveld"
 msgid "payment method"
 msgstr "betaalmethode"
 
-#: php/PaymentMethodBlocksController.php:179
+#: patterns/donation-form.php:57 php/PaymentMethodBlocksController.php:179
 #: php/PaymentMethodBlocksController.php:186
 msgid "Payment method"
 msgstr "Betaalmethode"
@@ -296,7 +271,9 @@ msgstr "Wachtwoord"
 msgid "URL"
 msgstr "URL"
 
-#: blocks/form-control/index.js:1 blocks/form-field/index.js:1
+#: patterns/donation-form.php:31 patterns/order-form.php:43
+#: patterns/product-configurator-form.php:73 blocks/form-control/index.js:1
+#: blocks/form-field/index.js:1
 msgid "Email address"
 msgstr "E-mailadres"
 
@@ -318,9 +295,7 @@ msgstr "Plaatshouder"
 
 #: blocks/form-control/index.js:1 blocks/form-field/index.js:1
 msgid "Text that appears in the form element when no value has been entered."
-msgstr ""
-"Tekst die in het formulierelement verschijnt wanneer er geen waarde is "
-"ingevoerd."
+msgstr "Tekst die in het formulierelement verschijnt wanneer er geen waarde is ingevoerd."
 
 #: blocks/form-control/index.js:1 blocks/form-field/index.js:1
 #: blocks/form-radio-option/index.js:1
@@ -411,15 +386,18 @@ msgstr "herhaling"
 msgid "subscription"
 msgstr "abonnement"
 
-#: blocks/form-radio-field/index.js:1 blocks/form-radio-option/index.js:1
+#: patterns/donation-form.php:40 blocks/form-radio-field/index.js:1
+#: blocks/form-radio-option/index.js:1
 msgid "Once"
-msgstr "Eenmaal"
+msgstr "Eenmalig"
 
-#: blocks/form-radio-field/index.js:1 blocks/form-radio-option/index.js:1
+#: patterns/donation-form.php:44 blocks/form-radio-field/index.js:1
+#: blocks/form-radio-option/index.js:1
 msgid "Monthly"
 msgstr "Maandelijks"
 
-#: blocks/form-radio-field/index.js:1 blocks/form-radio-option/index.js:1
+#: patterns/donation-form.php:48 blocks/form-radio-field/index.js:1
+#: blocks/form-radio-option/index.js:1
 msgid "Yearly"
 msgstr "Jaarlijks"
 
@@ -427,7 +405,7 @@ msgstr "Jaarlijks"
 msgid "Annual"
 msgstr "Jaarlijks"
 
-#: blocks/form-radio-field/index.js:1
+#: patterns/donation-form.php:39 blocks/form-radio-field/index.js:1
 msgid "Frequency"
 msgstr "Frequentie"
 
@@ -506,12 +484,8 @@ msgstr "Pronamic formulier"
 
 #: blocks/form/block.json
 msgctxt "block description"
-msgid ""
-"The Pronamic Form block makes it easy to add custom forms to your WordPress "
-"site."
-msgstr ""
-"Het Pronamic formulier-blok maakt het eenvoudig om aangepaste formulieren "
-"aan je WordPress-site toe te voegen."
+msgid "The Pronamic Form block makes it easy to add custom forms to your WordPress site."
+msgstr "Het Pronamic formulier-blok maakt het eenvoudig om aangepaste formulieren aan je WordPress-site toe te voegen."
 
 #: blocks/form/block.json
 msgctxt "block keyword"
@@ -542,3 +516,33 @@ msgstr "Verborgen bedrag"
 msgctxt "block description"
 msgid "Hidden payment amount for payment forms."
 msgstr "Verborgen betalingsbedrag voor betalingsformulieren."
+
+#: patterns/donation-form.php:76
+msgid "Donate"
+msgstr "Doneer"
+
+#: patterns/donation-form.php:53
+msgctxt "payment amount"
+msgid "Amount"
+msgstr "Bedrag"
+
+#: patterns/donation-form.php:71
+msgid "By making a recurring donation, you authorize automatic collection of future payments. For Bancontact, iDEAL, and SOFORT Banking, future payments will be collected via SEPA direct debit."
+msgstr "Bij een periodieke donatie geef je toestemming voor het automatisch incasseren van vervolgbetalingen. Voor Bancontact, iDEAL en SOFORT Banking worden vervolgbetalingen uitgevoerd via een SEPA-incasso."
+
+#: patterns/order-form.php:34 patterns/product-configurator-form.php:61
+msgid "First name"
+msgstr "Voornaam"
+
+#: patterns/order-form.php:38 patterns/product-configurator-form.php:67
+msgid "Last name"
+msgstr "Achternaam"
+
+#: patterns/order-form.php:27
+msgid "One-time"
+msgstr "Eenmalig"
+
+#: patterns/order-form.php:52
+msgctxt "button text to place an order"
+msgid "Order"
+msgstr "Bestel"
