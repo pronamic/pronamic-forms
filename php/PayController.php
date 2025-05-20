@@ -37,8 +37,11 @@ final class PayController {
 
 		\add_action( 'pronamic_forms_entry_inserted', $this->process_payment( ... ), 10, 2 );
 
-		\add_filter( 'pronamic_payment_source_description_pronamic_forms_entry', $this->source_description( ... ) );
-		\add_filter( 'pronamic_payment_source_url_pronamic_forms_entry', $this->source_url( ... ), 10, 2 );
+		\add_filter( 'pronamic_payment_source_description_pronamic_forms_entry', $this->payment_source_description( ... ) );
+		\add_filter( 'pronamic_payment_source_url_pronamic_forms_entry', $this->payment_source_url( ... ), 10, 2 );
+
+		\add_filter( 'pronamic_subscription_source_description_pronamic_forms_entry', $this->subscription_source_description( ... ) );
+		\add_filter( 'pronamic_subscription_source_url_pronamic_forms_entry', $this->subscription_source_url( ... ), 10, 2 );
 	}
 
 	/**
@@ -334,26 +337,55 @@ final class PayController {
 	}
 
 	/**
-	 * Source description.
+	 * Payment source description.
 	 *
 	 * @return string
 	 */
-	private function source_description() {
-		return \__( 'Pronamic Forms Entry', 'pronamic-forms' );
+	private function payment_source_description() {
+		return \__( 'Pronamic Forms Entry', 'pronamic-pay-doneren-met-mollie' );
 	}
 
 	/**
-	 * Source URL.
+	 * Payment source URL.
 	 *
 	 * @param string  $url     URL.
 	 * @param Payment $payment The payment to create the source URL for.
 	 *
 	 * @return string
 	 */
-	private function source_url( $url, Payment $payment ) {
+	private function payment_source_url( $url, Payment $payment ) {
 		$url = \add_query_arg(
 			[
 				'post'   => $payment->source_id,
+				'action' => 'edit',
+			],
+			\admin_url( 'post.php' )
+		);
+
+		return $url;
+	}
+
+	/**
+	 * Source description.
+	 *
+	 * @return string
+	 */
+	private function subscription_source_description() {
+		return \__( 'Pronamic Forms Entry', 'pronamic-pay-doneren-met-mollie' );
+	}
+
+	/**
+	 * Subscription source URL.
+	 *
+	 * @param string       $url          URL.
+	 * @param Subscription $subscription The subscription to create the source URL for.
+	 *
+	 * @return string
+	 */
+	private function subscription_source_url( $url, Subscription $subscription ) {
+		$url = \add_query_arg(
+			[
+				'post'   => $subscription->source_id,
 				'action' => 'edit',
 			],
 			\admin_url( 'post.php' )
