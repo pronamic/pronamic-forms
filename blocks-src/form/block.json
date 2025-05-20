@@ -23,6 +23,9 @@
 	"icon": "feedback",
 	"keywords": [ "form", "payment", "pronamic", "pronamic-pay" ],
 	"attributes": {
+		"namespace": {
+			"type": "string"
+		},
 		"result": {
 			"type": "string",
 			"default": ""
