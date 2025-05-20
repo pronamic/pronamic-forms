@@ -28,7 +28,7 @@
 	<!-- /wp:heading -->
 
 	<!-- wp:paragraph -->
-	<p><?php echo \esc_html_x( 'Standard bookcase', 'Product configurator form pattern', 'pronamic-forms' ); ?> = <strong>€ 400</strong></p>
+	<p><?php echo \esc_html_x( 'Standard bookcase', 'Product configurator form pattern', 'pronamic-forms' ); ?> = <strong>€ 400</strong></p>
 	<!-- /wp:paragraph -->
 
 	<!-- wp:pronamic/hidden-payment-amount {"paymentAmount":"400"} /-->
@@ -39,15 +39,15 @@
 
 	<!-- wp:pronamic/form-checkbox-field -->
 	<div class="wp-block-pronamic-form-checkbox-field wp-block-pronamic-form-field"><div class="wp-block-pronamic-form-label"><span><?php echo \esc_html_x( 'Add extra options:', 'Product configurator form pattern', 'pronamic-forms' ); ?></span></div><div class="wp-block-pronamic-form-radio-field__inner-blocks"><!-- wp:pronamic/form-checkbox-option {"paymentAmount":"82"} -->
-			<div class="wp-block-pronamic-form-checkbox-option"><input class="wp-block-pronamic-form-control__element" name="" value="" type="checkbox"/><label><?php echo \esc_html_x( 'Doors', 'Product configurator form pattern', 'pronamic-forms' ); ?> (€ 82)</label></div>
+			<div class="wp-block-pronamic-form-checkbox-option"><input class="wp-block-pronamic-form-control__element" name="" value="" type="checkbox"/><label><?php echo \esc_html_x( 'Doors', 'Product configurator form pattern', 'pronamic-forms' ); ?> (€ 82)</label></div>
 			<!-- /wp:pronamic/form-checkbox-option -->
 
 			<!-- wp:pronamic/form-checkbox-option {"paymentAmount":"40"} -->
-			<div class="wp-block-pronamic-form-checkbox-option"><input class="wp-block-pronamic-form-control__element" name="" value="" type="checkbox"/><label><?php echo \esc_html_x( 'Back panel', 'Product configurator form pattern', 'pronamic-forms' ); ?> (€ 40)</label></div>
+			<div class="wp-block-pronamic-form-checkbox-option"><input class="wp-block-pronamic-form-control__element" name="" value="" type="checkbox"/><label><?php echo \esc_html_x( 'Back panel', 'Product configurator form pattern', 'pronamic-forms' ); ?> (€ 40)</label></div>
 			<!-- /wp:pronamic/form-checkbox-option -->
 
 			<!-- wp:pronamic/form-checkbox-option {"paymentAmount":"25"} -->
-			<div class="wp-block-pronamic-form-checkbox-option"><input class="wp-block-pronamic-form-control__element" name="" value="" type="checkbox"/><label><?php echo \esc_html_x( 'Wheels', 'Product configurator form pattern', 'pronamic-forms' ); ?> (€ 25)</label></div>
+			<div class="wp-block-pronamic-form-checkbox-option"><input class="wp-block-pronamic-form-control__element" name="" value="" type="checkbox"/><label><?php echo \esc_html_x( 'Wheels', 'Product configurator form pattern', 'pronamic-forms' ); ?> (€ 25)</label></div>
 			<!-- /wp:pronamic/form-checkbox-option --></div></div>
 	<!-- /wp:pronamic/form-checkbox-field -->
 
