@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-05-20T12:58:19+00:00\n"
+"POT-Creation-Date: 2025-05-20T17:17:20+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: pronamic-forms\n"
@@ -95,29 +95,34 @@ msgstr ""
 #: patterns/product-configurator-form.php:73
 #: blocks/form-control/index.js:1
 #: blocks/form-field/index.js:1
+#: blocks/form/index.js:1
 msgid "Email address"
 msgstr ""
 
 #: patterns/donation-form.php:39
 #: blocks/form-radio-field/index.js:1
+#: blocks/form/index.js:1
 msgid "Frequency"
 msgstr ""
 
 #: patterns/donation-form.php:40
 #: blocks/form-radio-field/index.js:1
 #: blocks/form-radio-option/index.js:1
+#: blocks/form/index.js:1
 msgid "Once"
 msgstr ""
 
 #: patterns/donation-form.php:44
 #: blocks/form-radio-field/index.js:1
 #: blocks/form-radio-option/index.js:1
+#: blocks/form/index.js:1
 msgid "Monthly"
 msgstr ""
 
 #: patterns/donation-form.php:48
 #: blocks/form-radio-field/index.js:1
 #: blocks/form-radio-option/index.js:1
+#: blocks/form/index.js:1
 msgid "Yearly"
 msgstr ""
 
@@ -129,24 +134,28 @@ msgstr ""
 #: patterns/donation-form.php:57
 #: php/PaymentMethodBlocksController.php:179
 #: php/PaymentMethodBlocksController.php:186
+#: blocks/form/index.js:1
 msgid "Payment method"
 msgstr ""
 
 #: patterns/donation-form.php:58
 #: php/PaymentMethodBlocksController.php:86
 #: php/PaymentMethodBlocksController.php:174
+#: blocks/form/index.js:1
 msgid "Bancontact"
 msgstr ""
 
 #: patterns/donation-form.php:62
 #: php/PaymentMethodBlocksController.php:91
 #: php/PaymentMethodBlocksController.php:175
+#: blocks/form/index.js:1
 msgid "Card"
 msgstr ""
 
 #: patterns/donation-form.php:66
 #: php/PaymentMethodBlocksController.php:96
 #: php/PaymentMethodBlocksController.php:176
+#: blocks/form/index.js:1
 msgid "iDEAL"
 msgstr ""
 
@@ -155,6 +164,7 @@ msgid "By making a recurring donation, you authorize automatic collection of fut
 msgstr ""
 
 #: patterns/donation-form.php:76
+#: blocks/form/index.js:1
 msgid "Donate"
 msgstr ""
 
@@ -236,6 +246,7 @@ msgid "Contact form"
 msgstr ""
 
 #: php/BlockPatternsController.php:54
+#: blocks/form/index.js:1
 msgid "Donation form"
 msgstr ""
 
@@ -516,6 +527,42 @@ msgstr ""
 
 #: blocks/form-submission-notification/index.js:1
 msgid "Error/failure message for form submissions."
+msgstr ""
+
+#: blocks/form/index.js:1
+msgid "donation"
+msgstr ""
+
+#: blocks/form/index.js:1
+msgid "donate"
+msgstr ""
+
+#: blocks/form/index.js:1
+msgid "fundraiser"
+msgstr ""
+
+#: blocks/form/index.js:1
+msgid "charity"
+msgstr ""
+
+#: blocks/form/index.js:1
+msgid "contribute"
+msgstr ""
+
+#: blocks/form/index.js:1
+msgid "contribution"
+msgstr ""
+
+#: blocks/form/index.js:1
+msgid "nonprofit"
+msgstr ""
+
+#: blocks/form/index.js:1
+msgid "gift"
+msgstr ""
+
+#: blocks/form/index.js:1
+msgid "Amount"
 msgstr ""
 
 #: blocks/form-checkbox-field/block.json

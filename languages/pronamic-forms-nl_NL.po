@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Pronamic Forms 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/pronamic-forms\n"
-"POT-Creation-Date: 2025-05-19T07:24:49+00:00\n"
-"PO-Revision-Date: 2025-05-20 15:00+0200\n"
+"POT-Creation-Date: 2025-05-20T17:14:18+00:00\n"
+"PO-Revision-Date: 2025-05-20 19:17+0200\n"
 "Last-Translator: Remco Tolsma <info@remcotolsma.nl>\n"
 "Language-Team: \n"
 "Language: nl_NL\n"
@@ -74,6 +74,82 @@ msgstr "Bericht"
 msgid "Submit"
 msgstr "Verzenden"
 
+#: patterns/donation-form.php:31 patterns/order-form.php:43
+#: patterns/product-configurator-form.php:73 blocks/form-control/index.js:1
+#: blocks/form-field/index.js:1 blocks/form/index.js:1
+msgid "Email address"
+msgstr "E-mailadres"
+
+#: patterns/donation-form.php:39 blocks/form-radio-field/index.js:1
+#: blocks/form/index.js:1
+msgid "Frequency"
+msgstr "Frequentie"
+
+#: patterns/donation-form.php:40 blocks/form-radio-field/index.js:1
+#: blocks/form-radio-option/index.js:1 blocks/form/index.js:1
+msgid "Once"
+msgstr "Eenmalig"
+
+#: patterns/donation-form.php:44 blocks/form-radio-field/index.js:1
+#: blocks/form-radio-option/index.js:1 blocks/form/index.js:1
+msgid "Monthly"
+msgstr "Maandelijks"
+
+#: patterns/donation-form.php:48 blocks/form-radio-field/index.js:1
+#: blocks/form-radio-option/index.js:1 blocks/form/index.js:1
+msgid "Yearly"
+msgstr "Jaarlijks"
+
+#: patterns/donation-form.php:53
+msgctxt "payment amount"
+msgid "Amount"
+msgstr "Bedrag"
+
+#: patterns/donation-form.php:57 php/PaymentMethodBlocksController.php:179
+#: php/PaymentMethodBlocksController.php:186 blocks/form/index.js:1
+msgid "Payment method"
+msgstr "Betaalmethode"
+
+#: patterns/donation-form.php:58 php/PaymentMethodBlocksController.php:86
+#: php/PaymentMethodBlocksController.php:174 blocks/form/index.js:1
+msgid "Bancontact"
+msgstr "Bancontact"
+
+#: patterns/donation-form.php:62 php/PaymentMethodBlocksController.php:91
+#: php/PaymentMethodBlocksController.php:175 blocks/form/index.js:1
+msgid "Card"
+msgstr "Kaart"
+
+#: patterns/donation-form.php:66 php/PaymentMethodBlocksController.php:96
+#: php/PaymentMethodBlocksController.php:176 blocks/form/index.js:1
+msgid "iDEAL"
+msgstr "iDEAL"
+
+#: patterns/donation-form.php:71
+msgid "By making a recurring donation, you authorize automatic collection of future payments. For Bancontact, iDEAL, and SOFORT Banking, future payments will be collected via SEPA direct debit."
+msgstr "Bij een periodieke donatie geef je toestemming voor het automatisch incasseren van vervolgbetalingen. Voor Bancontact, iDEAL en SOFORT Banking worden vervolgbetalingen uitgevoerd via een SEPA-incasso."
+
+#: patterns/donation-form.php:76 blocks/form/index.js:1
+msgid "Donate"
+msgstr "Doneer"
+
+#: patterns/order-form.php:27
+msgid "One-time"
+msgstr "Eenmalig"
+
+#: patterns/order-form.php:34 patterns/product-configurator-form.php:61
+msgid "First name"
+msgstr "Voornaam"
+
+#: patterns/order-form.php:38 patterns/product-configurator-form.php:67
+msgid "Last name"
+msgstr "Achternaam"
+
+#: patterns/order-form.php:52
+msgctxt "button text to place an order"
+msgid "Order"
+msgstr "Bestel"
+
 #: patterns/product-configurator-form.php:27
 msgctxt "Product configurator form pattern"
 msgid "Bookcase"
@@ -132,7 +208,7 @@ msgstr "Pronamic formulieren"
 msgid "Contact form"
 msgstr "Contactformulier"
 
-#: php/BlockPatternsController.php:54
+#: php/BlockPatternsController.php:54 blocks/form/index.js:1
 msgid "Donation form"
 msgstr "Donatieformulier"
 
@@ -173,28 +249,13 @@ msgstr "Inzending – %s"
 msgid "Bancontact payment method"
 msgstr "Bancontact-betaalmethode"
 
-#: patterns/donation-form.php:58 php/PaymentMethodBlocksController.php:86
-#: php/PaymentMethodBlocksController.php:174
-msgid "Bancontact"
-msgstr "Bancontact"
-
 #: php/PaymentMethodBlocksController.php:90
 msgid "Card payment method"
 msgstr "Kaart-betaalmethode"
 
-#: patterns/donation-form.php:62 php/PaymentMethodBlocksController.php:91
-#: php/PaymentMethodBlocksController.php:175
-msgid "Card"
-msgstr "Kaart"
-
 #: php/PaymentMethodBlocksController.php:95
 msgid "iDEAL payment method"
 msgstr "iDEAL-betaalmethode"
-
-#: patterns/donation-form.php:66 php/PaymentMethodBlocksController.php:96
-#: php/PaymentMethodBlocksController.php:176
-msgid "iDEAL"
-msgstr "iDEAL"
 
 #: php/PaymentMethodBlocksController.php:171
 msgid "Payment method field"
@@ -203,11 +264,6 @@ msgstr "Betaalmethodeveld"
 #: php/PaymentMethodBlocksController.php:173
 msgid "payment method"
 msgstr "betaalmethode"
-
-#: patterns/donation-form.php:57 php/PaymentMethodBlocksController.php:179
-#: php/PaymentMethodBlocksController.php:186
-msgid "Payment method"
-msgstr "Betaalmethode"
 
 #: php/PostTypesController.php:38
 msgid "Submissions"
@@ -270,12 +326,6 @@ msgstr "Wachtwoord"
 #: blocks/form-control/index.js:1
 msgid "URL"
 msgstr "URL"
-
-#: patterns/donation-form.php:31 patterns/order-form.php:43
-#: patterns/product-configurator-form.php:73 blocks/form-control/index.js:1
-#: blocks/form-field/index.js:1
-msgid "Email address"
-msgstr "E-mailadres"
 
 #: blocks/form-control/index.js:1 blocks/form-field/index.js:1
 msgid "Telephone number"
@@ -386,28 +436,9 @@ msgstr "herhaling"
 msgid "subscription"
 msgstr "abonnement"
 
-#: patterns/donation-form.php:40 blocks/form-radio-field/index.js:1
-#: blocks/form-radio-option/index.js:1
-msgid "Once"
-msgstr "Eenmalig"
-
-#: patterns/donation-form.php:44 blocks/form-radio-field/index.js:1
-#: blocks/form-radio-option/index.js:1
-msgid "Monthly"
-msgstr "Maandelijks"
-
-#: patterns/donation-form.php:48 blocks/form-radio-field/index.js:1
-#: blocks/form-radio-option/index.js:1
-msgid "Yearly"
-msgstr "Jaarlijks"
-
 #: blocks/form-radio-field/index.js:1 blocks/form-radio-option/index.js:1
 msgid "Annual"
 msgstr "Jaarlijks"
-
-#: patterns/donation-form.php:39 blocks/form-radio-field/index.js:1
-msgid "Frequency"
-msgstr "Frequentie"
 
 #: blocks/form-radio-option/index.js:1
 msgid "One-time payment"
@@ -436,6 +467,42 @@ msgstr "Formulier inzending mislukt"
 #: blocks/form-submission-notification/index.js:1
 msgid "Error/failure message for form submissions."
 msgstr "Fout/mislukking bericht voor formulier inzendingen."
+
+#: blocks/form/index.js:1
+msgid "donation"
+msgstr "donatie"
+
+#: blocks/form/index.js:1
+msgid "donate"
+msgstr "doneer"
+
+#: blocks/form/index.js:1
+msgid "fundraiser"
+msgstr "fondsenwerving"
+
+#: blocks/form/index.js:1
+msgid "charity"
+msgstr "goed doel"
+
+#: blocks/form/index.js:1
+msgid "contribute"
+msgstr "bijdragen"
+
+#: blocks/form/index.js:1
+msgid "contribution"
+msgstr "bijdrage"
+
+#: blocks/form/index.js:1
+msgid "nonprofit"
+msgstr "non-profit"
+
+#: blocks/form/index.js:1
+msgid "gift"
+msgstr "geschenk"
+
+#: blocks/form/index.js:1
+msgid "Amount"
+msgstr "Bedrag"
 
 #: blocks/form-checkbox-field/block.json
 msgctxt "block title"
@@ -516,33 +583,3 @@ msgstr "Verborgen bedrag"
 msgctxt "block description"
 msgid "Hidden payment amount for payment forms."
 msgstr "Verborgen betalingsbedrag voor betalingsformulieren."
-
-#: patterns/donation-form.php:76
-msgid "Donate"
-msgstr "Doneer"
-
-#: patterns/donation-form.php:53
-msgctxt "payment amount"
-msgid "Amount"
-msgstr "Bedrag"
-
-#: patterns/donation-form.php:71
-msgid "By making a recurring donation, you authorize automatic collection of future payments. For Bancontact, iDEAL, and SOFORT Banking, future payments will be collected via SEPA direct debit."
-msgstr "Bij een periodieke donatie geef je toestemming voor het automatisch incasseren van vervolgbetalingen. Voor Bancontact, iDEAL en SOFORT Banking worden vervolgbetalingen uitgevoerd via een SEPA-incasso."
-
-#: patterns/order-form.php:34 patterns/product-configurator-form.php:61
-msgid "First name"
-msgstr "Voornaam"
-
-#: patterns/order-form.php:38 patterns/product-configurator-form.php:67
-msgid "Last name"
-msgstr "Achternaam"
-
-#: patterns/order-form.php:27
-msgid "One-time"
-msgstr "Eenmalig"
-
-#: patterns/order-form.php:52
-msgctxt "button text to place an order"
-msgid "Order"
-msgstr "Bestel"

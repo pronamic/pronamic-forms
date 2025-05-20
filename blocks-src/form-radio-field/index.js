@@ -173,8 +173,7 @@ registerBlockType( metadata.name, {
 						label: __( 'Once', 'pronamic-forms' ),
 						reference: 'pronamic_pay_subscription_frequency',
 						value: 'once',
-					},
-					[],
+					}
 				],
 				[
 					'pronamic/form-radio-option',
@@ -182,8 +181,7 @@ registerBlockType( metadata.name, {
 						label: __( 'Monthly', 'pronamic-forms' ),
 						reference: 'pronamic_pay_subscription_frequency',
 						value: 'monthly',
-					},
-					[],
+					}
 				],
 				[
 					'pronamic/form-radio-option',
@@ -191,8 +189,7 @@ registerBlockType( metadata.name, {
 						label: __( 'Yearly', 'pronamic-forms' ),
 						reference: 'pronamic_pay_subscription_frequency',
 						value: 'yearly',
-					},
-					[],
+					}
 				],
 			],
 			example: {
