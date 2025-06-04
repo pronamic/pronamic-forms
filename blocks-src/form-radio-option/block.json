@@ -7,7 +7,7 @@
 	"category": "pronamic-forms",
 	"ancestor": [ "pronamic/form" ],
 	"icon": "feedback",
-	"description": "",
+	"description": "An individual radio option within a single-choice field.",
 	"attributes": {
 		"name": {
 			"type": "string",

@@ -5,7 +5,7 @@
 	"version": "1.0.0",
 	"title": "Hidden payment amount",
 	"category": "pronamic-forms",
-	"description": "Hidden payment amount for payment forms.",
+	"description": "Automatically includes a fixed payment amount with the form submission.",
 	"ancestor": [ "pronamic/form" ],
 	"icon": "feedback",
 	"attributes": {

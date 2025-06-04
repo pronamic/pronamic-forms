@@ -7,7 +7,7 @@
 	"category": "pronamic-forms",
 	"ancestor": [ "pronamic/form" ],
 	"icon": "feedback",
-	"description": "",
+	"description": "An individual checkbox option within a multiple-choice field.",
 	"attributes": {
 		"name": {
 			"type": "string",

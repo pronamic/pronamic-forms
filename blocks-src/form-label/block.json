@@ -7,7 +7,7 @@
 	"category": "pronamic-forms",
 	"ancestor": [ "pronamic/form" ],
 	"icon": "feedback",
-	"description": "",
+	"description": "Adds context to form controls and improves accessibility for all users.",
 	"attributes": {
 		"tagName": {
 			"type": "string",

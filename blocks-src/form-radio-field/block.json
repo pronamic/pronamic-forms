@@ -10,7 +10,7 @@
 		"pronamic/form-radio-option"
 	],
 	"icon": "feedback",
-	"description": "",
+	"description": "Lets users select one option from a list, useful for quick decisions.",
 	"attributes": {
 		"label": {
 			"type": "rich-text",

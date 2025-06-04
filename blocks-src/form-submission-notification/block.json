@@ -7,7 +7,7 @@
 	"category": "pronamic-forms",
 	"ancestor": [ "pronamic/form" ],
 	"icon": "megaphone",
-	"description": "",
+	"description": "Shows a simple success or failure message after the form is submitted.",
 	"attributes": {
 		"type": {
 			"type": "string",

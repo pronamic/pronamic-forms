@@ -7,7 +7,7 @@
 	"category": "pronamic-forms",
 	"ancestor": [ "pronamic/form" ],
 	"icon": "feedback",
-	"description": "",
+	"description": "Combines a label and input control into a single, accessible form element.",
 	"attributes": {
 		"label": {
 			"type": "rich-text",
