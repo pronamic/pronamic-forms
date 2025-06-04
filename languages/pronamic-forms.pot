@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-05-20T17:17:20+00:00\n"
+"POT-Creation-Date: 2025-06-04T11:55:12+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: pronamic-forms\n"
@@ -570,9 +570,19 @@ msgctxt "block title"
 msgid "Multiple-choice field"
 msgstr ""
 
+#: blocks/form-checkbox-field/block.json
+msgctxt "block description"
+msgid "Lets users pick multiple options from a list."
+msgstr ""
+
 #: blocks/form-checkbox-option/block.json
 msgctxt "block title"
 msgid "Multiple-choice option"
+msgstr ""
+
+#: blocks/form-checkbox-option/block.json
+msgctxt "block description"
+msgid "An individual checkbox option within a multiple-choice field."
 msgstr ""
 
 #: blocks/form-control/block.json
@@ -580,9 +590,19 @@ msgctxt "block title"
 msgid "Form control"
 msgstr ""
 
+#: blocks/form-control/block.json
+msgctxt "block description"
+msgid "The input element itself, such as a text, email, number, or hidden field."
+msgstr ""
+
 #: blocks/form-field/block.json
 msgctxt "block title"
 msgid "Form field"
+msgstr ""
+
+#: blocks/form-field/block.json
+msgctxt "block description"
+msgid "Combines a label and input control into a single, accessible form element."
 msgstr ""
 
 #: blocks/form-label/block.json
@@ -590,9 +610,19 @@ msgctxt "block title"
 msgid "Form label"
 msgstr ""
 
+#: blocks/form-label/block.json
+msgctxt "block description"
+msgid "Adds context to form controls and improves accessibility for all users."
+msgstr ""
+
 #: blocks/form-radio-field/block.json
 msgctxt "block title"
 msgid "Single-choice field"
+msgstr ""
+
+#: blocks/form-radio-field/block.json
+msgctxt "block description"
+msgid "Lets users select one option from a list, useful for quick decisions."
 msgstr ""
 
 #: blocks/form-radio-option/block.json
@@ -600,9 +630,19 @@ msgctxt "block title"
 msgid "Single-choice option"
 msgstr ""
 
+#: blocks/form-radio-option/block.json
+msgctxt "block description"
+msgid "An individual radio option within a single-choice field."
+msgstr ""
+
 #: blocks/form-submission-notification/block.json
 msgctxt "block title"
 msgid "Form submission notification"
+msgstr ""
+
+#: blocks/form-submission-notification/block.json
+msgctxt "block description"
+msgid "Shows a simple success or failure message after the form is submitted."
 msgstr ""
 
 #: blocks/form/block.json
@@ -642,5 +682,5 @@ msgstr ""
 
 #: blocks/hidden-payment-amount/block.json
 msgctxt "block description"
-msgid "Hidden payment amount for payment forms."
+msgid "Automatically includes a fixed payment amount with the form submission."
 msgstr ""

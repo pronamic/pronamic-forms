@@ -10,7 +10,7 @@
 		"pronamic/form-checkbox-option"
 	],
 	"icon": "feedback",
-	"description": "Allows users to select one or more options, giving them greater flexibility.",
+	"description": "Lets users pick multiple options from a list.",
 	"attributes": {
 		"label": {
 			"type": "rich-text",

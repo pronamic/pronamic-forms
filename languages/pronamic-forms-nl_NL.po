@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Pronamic Forms 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/pronamic-forms\n"
 "POT-Creation-Date: 2025-05-20T17:14:18+00:00\n"
-"PO-Revision-Date: 2025-05-20 19:17+0200\n"
+"PO-Revision-Date: 2025-06-04 13:58+0200\n"
 "Last-Translator: Remco Tolsma <info@remcotolsma.nl>\n"
 "Language-Team: \n"
 "Language: nl_NL\n"
@@ -579,7 +579,47 @@ msgctxt "block title"
 msgid "Hidden payment amount"
 msgstr "Verborgen bedrag"
 
+#: blocks/form-checkbox-option/block.json
+msgctxt "block description"
+msgid "An individual checkbox option within a multiple-choice field."
+msgstr "Een individuele selectievakje optie binnen een meerkeuzeveld."
+
+#: blocks/form-control/block.json
+msgctxt "block description"
+msgid "The input element itself, such as a text, email, number, or hidden field."
+msgstr "Het invoerelement zelf, zoals een tekst-, e-mail-, nummer- of verborgen veld."
+
+#: blocks/form-field/block.json
+msgctxt "block description"
+msgid "Combines a label and input control into a single, accessible form element."
+msgstr "Combineert een label en een invoerelement tot één toegankelijk formelement."
+
+#: blocks/form-label/block.json
+msgctxt "block description"
+msgid "Adds context to form controls and improves accessibility for all users."
+msgstr "Voegt context toe aan formulierelementen en verbetert de toegankelijkheid voor alle gebruikers."
+
+#: blocks/form-radio-field/block.json
+msgctxt "block description"
+msgid "Lets users select one option from a list, useful for quick decisions."
+msgstr "Laat gebruikers één optie uit een lijst kiezen, ideaal voor snelle keuzes."
+
+#: blocks/form-radio-option/block.json
+msgctxt "block description"
+msgid "An individual radio option within a single-choice field."
+msgstr "Een individuele keuzeoptie binnen een keuzeveld."
+
+#: blocks/form-submission-notification/block.json
+msgctxt "block description"
+msgid "Shows a simple success or failure message after the form is submitted."
+msgstr "Toont een eenvoudige succes- of foutmelding nadat het formulier is verzonden."
+
 #: blocks/hidden-payment-amount/block.json
 msgctxt "block description"
-msgid "Hidden payment amount for payment forms."
-msgstr "Verborgen betalingsbedrag voor betalingsformulieren."
+msgid "Automatically includes a fixed payment amount with the form submission."
+msgstr "Voegt automatisch een vast bedrag toe aan de formulierinzending."
+
+#: blocks/form-checkbox-field/block.json
+msgctxt "block description"
+msgid "Lets users pick multiple options from a list."
+msgstr "Laat gebruikers meerdere opties uit een lijst kiezen."
