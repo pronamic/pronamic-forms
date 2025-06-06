@@ -41,18 +41,18 @@ final class BlockTypesController {
 		\register_block_type(
 			__DIR__ . '/../blocks/form',
 			[
-				'render_callback' => function ( $attributes, $content ) {
+				'render_callback' => function ( $attributes, $content, $block ) {
 					$form_closing_tag_position = \strrpos( $content, '</form>' );
 
 					if ( false === $form_closing_tag_position ) {
 						return $content;
 					}
 
-					if ( ! \array_key_exists( 'hash', $attributes ) ) {
+					if ( ! \array_key_exists( 'pronamic-forms/hash', $block->context ) ) {
 						return $content;
 					}
 
-					$hash = $attributes['hash'];
+					$hash = $block->context['pronamic-forms/hash'];
 
 					$input_hidden_hash = \sprintf(
 						'<input type="hidden" name="pronamic_pay_form_hash" value="%s" />',
@@ -214,11 +214,11 @@ final class BlockTypesController {
 				 * @link https://github.com/WordPress/gutenberg/blob/7340783694bdeaa8c4c73030b7a05c83cdcffa44/packages/block-library/src/form-submission-notification/index.php#L9
 				 */
 				'render_callback' => function ( $attributes, $content, $block ) {
-					if ( ! \array_key_exists( 'pronamic/form-result', $block->context ) ) {
+					if ( ! \array_key_exists( 'pronamic-forms/submissionState', $block->context ) ) {
 						return '';
 					}
 
-					$result = $block->context['pronamic/form-result'];
+					$result = $block->context['pronamic-forms/submissionState'];
 
 					if ( $result !== $attributes['type'] ) {
 						return '';

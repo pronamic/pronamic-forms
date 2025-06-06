@@ -27,7 +27,7 @@
 <p><?php \esc_html_e( 'One-time', 'pronamic-forms' ); ?><br><s>€ 311,00</s><br>€ 267,00</p>
 <!-- /wp:paragraph -->
 
- <!-- wp:pronamic/hidden-payment-amount {"paymentAmount":"267"} /-->
+<!-- wp:pronamic/hidden-payment-amount {"paymentAmount":"267"} /-->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 <div class="wp-block-group"><!-- wp:pronamic/form-field {"required":true} -->

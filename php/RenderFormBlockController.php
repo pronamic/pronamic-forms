@@ -12,7 +12,7 @@ namespace Pronamic\PronamicForms;
 
 /**
  * Render form block controller class
- * 
+ *
  * @link https://github.com/WordPress/WordPress/blob/ee3beccbd150fce4fb508c7a597d876b6dfc1693/wp-includes/blocks.php#L2043-L2074s
  * @phpstan-type BlockAttributes array{ id?: string, type?: string, name?: string, value?: string }
  * @phpstan-type ParsedBlock array{ blockName: string, attrs: BlockAttributes, innerBlocks: array, innerHTML: string }
@@ -20,16 +20,40 @@ namespace Pronamic\PronamicForms;
 final class RenderFormBlockController {
 	/**
 	 * Setup.
-	 * 
+	 *
 	 * @return void
 	 */
 	public function setup() {
 		\add_filter( 'render_block_data', $this->render_block_data( ... ) );
+
+		\add_filter( 'render_block_context', $this->render_block_context( ... ), 10, 2 );
+	}
+
+	/**
+	 * Render block context.
+	 *
+	 * @param array       $context      Context.
+	 * @param ParsedBlock $parsed_block Parsed block.
+	 * @return array
+	 */
+	private function render_block_context( $context, $parsed_block ) {
+		$block_name = $parsed_block['blockName'];
+
+		if ( 'pronamic/form' !== $block_name ) {
+			return $context;
+		}
+
+		$context['pronamic-forms/hash'] = $parsed_block['attrs']['hash'];
+
+		$context['pronamic-forms/submissionResult'] = $parsed_block['attrs']['result'];
+		$context['pronamic-forms/submissionState']  = $parsed_block['attrs']['result'];
+
+		return $context;
 	}
 
 	/**
 	 * Render block data.
-	 * 
+	 *
 	 * @link https://github.com/WordPress/WordPress/blob/ee3beccbd150fce4fb508c7a597d876b6dfc1693/wp-includes/blocks.php#L2043-L2074
 	 * @param ParsedBlock $parsed_block Parsed block.
 	 * @return ParsedBlock
@@ -41,14 +65,12 @@ final class RenderFormBlockController {
 			return $parsed_block;
 		}
 
-		$hash = \wp_hash( \serialize_block( $parsed_block ) );
+		$parsed_block['attrs']['hash']   = \wp_hash( \serialize_block( $parsed_block ) );
+		$parsed_block['attrs']['result'] = '';
 
 		$render_form_block_updater = new RenderFormBlockUpdater();
 
 		$parsed_block = $render_form_block_updater->update_parsed_block( $parsed_block );
-
-		$parsed_block['attrs']['hash']   = $hash;
-		$parsed_block['attrs']['result'] = '';
 
 		$parsed_block = $this->maybe_process_form( $parsed_block );
 
@@ -77,8 +99,6 @@ final class RenderFormBlockController {
 		$post_hash = \sanitize_text_field( \wp_unslash( $_POST['pronamic_pay_form_hash'] ) );
 
 		if ( $post_hash !== $hash ) {
-			$parsed_block['attrs']['result'] = 'error';
-
 			return $parsed_block;
 		}
 
@@ -90,7 +110,7 @@ final class RenderFormBlockController {
 			$form_submission_processor->maybe_process_form( $parsed_block );
 		} catch ( \Exception ) {
 			$parsed_block['attrs']['result'] = 'error';
-		}       
+		}
 
 		return $parsed_block;
 	}

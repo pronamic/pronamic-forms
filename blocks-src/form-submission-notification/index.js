@@ -22,7 +22,7 @@ registerBlockType( metadata.name, {
 	edit: ( { attributes, clientId, context, isSelected } ) => {
 		const blockProps = useBlockProps();
 
-		const result = context[ 'pronamic/form-result' ];
+		const result = context[ 'pronamic-forms/submissionResult' ];
 
 		const showInnerBlocks = (
 			'' === result

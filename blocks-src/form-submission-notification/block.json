@@ -14,7 +14,10 @@
 			"default": ""
 		}
 	},
-	"usesContext": [ "pronamic/form-result" ],
+	"usesContext": [
+		"pronamic-forms/submissionResult",
+		"pronamic-forms/submissionState"
+	],
 	"supports": {
 		"anchor": true,
 		"html": false,

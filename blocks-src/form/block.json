@@ -32,8 +32,13 @@
 		}
 	},
 	"providesContext": {
-		"pronamic/form-result": "result"
+		"pronamic-forms/submissionResult": "result"
 	},
+	"usesContext": [
+		"pronamic-forms/hash",
+		"pronamic-forms/submissionResult",
+		"pronamic-forms/submissionState"
+	],
 	"example": {
 		"attributes": {},
 		"innerBlocks": [
