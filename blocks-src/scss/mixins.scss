@@ -86,7 +86,8 @@
 	}
 
 	label {
-		@include visually-hidden;
+		cursor: pointer;
+		margin-left: .5em;
 	}
 }
 
