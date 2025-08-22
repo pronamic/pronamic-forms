@@ -16,5 +16,5 @@
 		"build-wp-scripts": "wp-scripts build --webpack-src-dir=blocks-src --output-path=blocks",
 		"start": "wp-scripts start --webpack-src-dir=blocks-src --output-path=blocks"
 	},
-	"version": "1.1.0"
+	"version": "1.2.0"
 }
