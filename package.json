@@ -1,11 +1,11 @@
 {
 	"dependencies": {
-		"@wordpress/interactivity": "^6.23.0",
+		"@wordpress/interactivity": "^6.29.0",
 		"clsx": "^2.1.1"
 	},
 	"devDependencies": {
-		"@wordpress/env": "^10.23.0",
-		"@wordpress/scripts": "^30.16.0",
+		"@wordpress/env": "^10.29.0",
+		"@wordpress/scripts": "^30.22.0",
 		"npm-run-all": "^4.1.5"
 	},
 	"prettier": "@wordpress/prettier-config",
