@@ -2,19 +2,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Pronamic Forms 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/pronamic-forms\n"
-"POT-Creation-Date: 2025-05-20T17:14:18+00:00\n"
-"PO-Revision-Date: 2025-06-04 13:58+0200\n"
 "Last-Translator: Remco Tolsma <info@remcotolsma.nl>\n"
 "Language-Team: \n"
-"Language: nl_NL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-05-20T17:14:18+00:00\n"
+"PO-Revision-Date: 2025-06-04 13:58+0200\n"
+"Language: nl_NL\n"
 "X-Generator: Poedit 3.6\n"
 "X-Domain: pronamic-forms\n"
 
 #. Plugin Name of the plugin
-#: pronamic-forms.php php/BlockEditorController.php:39
+#: pronamic-forms.php
+#: php/BlockEditorController.php:39
 msgid "Pronamic Forms"
 msgstr "Pronamic Forms"
 
@@ -38,65 +39,89 @@ msgstr "Pronamic"
 msgid "https://www.pronamic.eu/"
 msgstr "https://www.pronamic.nl/"
 
-#: patterns/contact-form.php:16 patterns/donation-form.php:16
-#: patterns/order-form.php:16 patterns/product-configurator-form.php:16
-#: blocks/form-submission-notification/index.js:1 blocks/form/index.js:1
+#: patterns/contact-form.php:16
+#: patterns/donation-form.php:16
+#: patterns/order-form.php:16
+#: patterns/product-configurator-form.php:16
+#: blocks/form-submission-notification/index.js:1
+#: blocks/form/index.js:1
 msgid "Your form has been submitted successfully."
 msgstr "Je formulier is succesvol verzonden."
 
-#: patterns/contact-form.php:22 patterns/donation-form.php:22
-#: patterns/order-form.php:22 patterns/product-configurator-form.php:22
-#: blocks/form-submission-notification/index.js:1 blocks/form/index.js:1
+#: patterns/contact-form.php:22
+#: patterns/donation-form.php:22
+#: patterns/order-form.php:22
+#: patterns/product-configurator-form.php:22
+#: blocks/form-submission-notification/index.js:1
+#: blocks/form/index.js:1
 msgid "There was an error submitting your form."
 msgstr "Er is een fout opgetreden bij het verzenden van je formulier."
 
-#: patterns/contact-form.php:27 patterns/donation-form.php:27
-#: blocks/form-checkbox-field/index.js:1 blocks/form-control/index.js:1
-#: blocks/form-field/index.js:1 blocks/form-radio-field/index.js:1
+#: patterns/contact-form.php:27
+#: patterns/donation-form.php:27
+#: blocks/form-checkbox-field/index.js:1
+#: blocks/form-control/index.js:1
+#: blocks/form-field/index.js:1
+#: blocks/form-radio-field/index.js:1
 #: blocks/form/index.js:1
 msgid "Name"
 msgstr "Naam"
 
-#: patterns/contact-form.php:31 blocks/form/index.js:1
+#: patterns/contact-form.php:31
+#: blocks/form/index.js:1
 msgid "Email"
 msgstr "E-mail"
 
-#: patterns/contact-form.php:35 blocks/form/index.js:1
+#: patterns/contact-form.php:35
+#: blocks/form/index.js:1
 msgid "Subject"
 msgstr "Onderwerp"
 
-#: patterns/contact-form.php:39 patterns/donation-form.php:35
-#: patterns/order-form.php:47 blocks/form/index.js:1
+#: patterns/contact-form.php:39
+#: patterns/donation-form.php:35
+#: patterns/order-form.php:47
+#: blocks/form/index.js:1
 msgid "Message"
 msgstr "Bericht"
 
-#: patterns/contact-form.php:44 blocks/form/index.js:1
+#: patterns/contact-form.php:44
+#: blocks/form/index.js:1
 msgid "Submit"
 msgstr "Verzenden"
 
-#: patterns/donation-form.php:31 patterns/order-form.php:43
-#: patterns/product-configurator-form.php:73 blocks/form-control/index.js:1
-#: blocks/form-field/index.js:1 blocks/form/index.js:1
+#: patterns/donation-form.php:31
+#: patterns/order-form.php:43
+#: patterns/product-configurator-form.php:73
+#: blocks/form-control/index.js:1
+#: blocks/form-field/index.js:1
+#: blocks/form/index.js:1
 msgid "Email address"
 msgstr "E-mailadres"
 
-#: patterns/donation-form.php:39 blocks/form-radio-field/index.js:1
+#: patterns/donation-form.php:39
+#: blocks/form-radio-field/index.js:1
 #: blocks/form/index.js:1
 msgid "Frequency"
 msgstr "Frequentie"
 
-#: patterns/donation-form.php:40 blocks/form-radio-field/index.js:1
-#: blocks/form-radio-option/index.js:1 blocks/form/index.js:1
+#: patterns/donation-form.php:40
+#: blocks/form-radio-field/index.js:1
+#: blocks/form-radio-option/index.js:1
+#: blocks/form/index.js:1
 msgid "Once"
 msgstr "Eenmalig"
 
-#: patterns/donation-form.php:44 blocks/form-radio-field/index.js:1
-#: blocks/form-radio-option/index.js:1 blocks/form/index.js:1
+#: patterns/donation-form.php:44
+#: blocks/form-radio-field/index.js:1
+#: blocks/form-radio-option/index.js:1
+#: blocks/form/index.js:1
 msgid "Monthly"
 msgstr "Maandelijks"
 
-#: patterns/donation-form.php:48 blocks/form-radio-field/index.js:1
-#: blocks/form-radio-option/index.js:1 blocks/form/index.js:1
+#: patterns/donation-form.php:48
+#: blocks/form-radio-field/index.js:1
+#: blocks/form-radio-option/index.js:1
+#: blocks/form/index.js:1
 msgid "Yearly"
 msgstr "Jaarlijks"
 
@@ -105,23 +130,31 @@ msgctxt "payment amount"
 msgid "Amount"
 msgstr "Bedrag"
 
-#: patterns/donation-form.php:57 php/PaymentMethodBlocksController.php:179
-#: php/PaymentMethodBlocksController.php:186 blocks/form/index.js:1
+#: patterns/donation-form.php:57
+#: php/PaymentMethodBlocksController.php:179
+#: php/PaymentMethodBlocksController.php:186
+#: blocks/form/index.js:1
 msgid "Payment method"
 msgstr "Betaalmethode"
 
-#: patterns/donation-form.php:58 php/PaymentMethodBlocksController.php:86
-#: php/PaymentMethodBlocksController.php:174 blocks/form/index.js:1
+#: patterns/donation-form.php:58
+#: php/PaymentMethodBlocksController.php:86
+#: php/PaymentMethodBlocksController.php:174
+#: blocks/form/index.js:1
 msgid "Bancontact"
 msgstr "Bancontact"
 
-#: patterns/donation-form.php:62 php/PaymentMethodBlocksController.php:91
-#: php/PaymentMethodBlocksController.php:175 blocks/form/index.js:1
+#: patterns/donation-form.php:62
+#: php/PaymentMethodBlocksController.php:91
+#: php/PaymentMethodBlocksController.php:175
+#: blocks/form/index.js:1
 msgid "Card"
 msgstr "Kaart"
 
-#: patterns/donation-form.php:66 php/PaymentMethodBlocksController.php:96
-#: php/PaymentMethodBlocksController.php:176 blocks/form/index.js:1
+#: patterns/donation-form.php:66
+#: php/PaymentMethodBlocksController.php:96
+#: php/PaymentMethodBlocksController.php:176
+#: blocks/form/index.js:1
 msgid "iDEAL"
 msgstr "iDEAL"
 
@@ -129,7 +162,8 @@ msgstr "iDEAL"
 msgid "By making a recurring donation, you authorize automatic collection of future payments. For Bancontact, iDEAL, and SOFORT Banking, future payments will be collected via SEPA direct debit."
 msgstr "Bij een periodieke donatie geef je toestemming voor het automatisch incasseren van vervolgbetalingen. Voor Bancontact, iDEAL en SOFORT Banking worden vervolgbetalingen uitgevoerd via een SEPA-incasso."
 
-#: patterns/donation-form.php:76 blocks/form/index.js:1
+#: patterns/donation-form.php:76
+#: blocks/form/index.js:1
 msgid "Donate"
 msgstr "Doneer"
 
@@ -137,11 +171,13 @@ msgstr "Doneer"
 msgid "One-time"
 msgstr "Eenmalig"
 
-#: patterns/order-form.php:34 patterns/product-configurator-form.php:61
+#: patterns/order-form.php:34
+#: patterns/product-configurator-form.php:61
 msgid "First name"
 msgstr "Voornaam"
 
-#: patterns/order-form.php:38 patterns/product-configurator-form.php:67
+#: patterns/order-form.php:38
+#: patterns/product-configurator-form.php:67
 msgid "Last name"
 msgstr "Achternaam"
 
@@ -208,7 +244,8 @@ msgstr "Pronamic formulieren"
 msgid "Contact form"
 msgstr "Contactformulier"
 
-#: php/BlockPatternsController.php:54 blocks/form/index.js:1
+#: php/BlockPatternsController.php:54
+#: blocks/form/index.js:1
 msgid "Donation form"
 msgstr "Donatieformulier"
 
@@ -273,37 +310,52 @@ msgstr "Inzendingen"
 msgid "Origin"
 msgstr "Oorsprong"
 
-#: blocks/form-checkbox-field/index.js:1 blocks/form-checkbox-option/index.js:1
-#: blocks/form-control/index.js:1 blocks/form-field/index.js:1
-#: blocks/form-label/index.js:1 blocks/form-radio-field/index.js:1
-#: blocks/form-radio-option/index.js:1 blocks/hidden-payment-amount/index.js:1
+#: blocks/form-checkbox-field/index.js:1
+#: blocks/form-checkbox-option/index.js:1
+#: blocks/form-control/index.js:1
+#: blocks/form-field/index.js:1
+#: blocks/form-label/index.js:1
+#: blocks/form-radio-field/index.js:1
+#: blocks/form-radio-option/index.js:1
+#: blocks/hidden-payment-amount/index.js:1
 msgid "Settings"
 msgstr "Instellingen"
 
-#: blocks/form-checkbox-field/index.js:1 blocks/form-control/index.js:1
-#: blocks/form-field/index.js:1 blocks/form-radio-field/index.js:1
+#: blocks/form-checkbox-field/index.js:1
+#: blocks/form-control/index.js:1
+#: blocks/form-field/index.js:1
+#: blocks/form-radio-field/index.js:1
 msgid "Required"
 msgstr "Vereist"
 
-#: blocks/form-checkbox-field/index.js:1 blocks/form-control/index.js:1
-#: blocks/form-field/index.js:1 blocks/form-radio-field/index.js:1
+#: blocks/form-checkbox-field/index.js:1
+#: blocks/form-control/index.js:1
+#: blocks/form-field/index.js:1
+#: blocks/form-radio-field/index.js:1
 msgid "Select this option to make the input required."
 msgstr "Selecteer deze optie om de invoer verplicht te maken."
 
-#: blocks/form-checkbox-field/index.js:1 blocks/form-control/index.js:1
-#: blocks/form-field/index.js:1 blocks/form-radio-field/index.js:1
+#: blocks/form-checkbox-field/index.js:1
+#: blocks/form-control/index.js:1
+#: blocks/form-field/index.js:1
+#: blocks/form-radio-field/index.js:1
 #: blocks/form-radio-option/index.js:1
 msgid "Reference"
 msgstr "Referentie"
 
-#: blocks/form-checkbox-field/index.js:1 blocks/form-checkbox-option/index.js:1
-#: blocks/form-field/index.js:1 blocks/form-label/index.js:1
-#: blocks/form-radio-field/index.js:1 blocks/form-radio-option/index.js:1
+#: blocks/form-checkbox-field/index.js:1
+#: blocks/form-checkbox-option/index.js:1
+#: blocks/form-field/index.js:1
+#: blocks/form-label/index.js:1
+#: blocks/form-radio-field/index.js:1
+#: blocks/form-radio-option/index.js:1
 msgid "Enter label…"
 msgstr "Voer label in…"
 
-#: blocks/form-checkbox-option/index.js:1 blocks/form-field/index.js:1
-#: blocks/form-radio-option/index.js:1 blocks/hidden-payment-amount/index.js:1
+#: blocks/form-checkbox-option/index.js:1
+#: blocks/form-field/index.js:1
+#: blocks/form-radio-option/index.js:1
+#: blocks/hidden-payment-amount/index.js:1
 msgid "Payment amount"
 msgstr "Betalingsbedrag"
 
@@ -319,7 +371,8 @@ msgstr "Tekst"
 msgid "Textarea"
 msgstr "Tekstvak"
 
-#: blocks/form-control/index.js:1 blocks/form-field/index.js:1
+#: blocks/form-control/index.js:1
+#: blocks/form-field/index.js:1
 msgid "Password"
 msgstr "Wachtwoord"
 
@@ -327,7 +380,8 @@ msgstr "Wachtwoord"
 msgid "URL"
 msgstr "URL"
 
-#: blocks/form-control/index.js:1 blocks/form-field/index.js:1
+#: blocks/form-control/index.js:1
+#: blocks/form-field/index.js:1
 msgid "Telephone number"
 msgstr "Telefoonnummer"
 
@@ -339,15 +393,18 @@ msgstr "Selectievakje"
 msgid "Radio"
 msgstr "Keuzerondje"
 
-#: blocks/form-control/index.js:1 blocks/form-field/index.js:1
+#: blocks/form-control/index.js:1
+#: blocks/form-field/index.js:1
 msgid "Placeholder"
 msgstr "Plaatshouder"
 
-#: blocks/form-control/index.js:1 blocks/form-field/index.js:1
+#: blocks/form-control/index.js:1
+#: blocks/form-field/index.js:1
 msgid "Text that appears in the form element when no value has been entered."
 msgstr "Tekst die in het formulierelement verschijnt wanneer er geen waarde is ingevoerd."
 
-#: blocks/form-control/index.js:1 blocks/form-field/index.js:1
+#: blocks/form-control/index.js:1
+#: blocks/form-field/index.js:1
 #: blocks/form-radio-option/index.js:1
 msgid "Value"
 msgstr "Waarde"
@@ -420,23 +477,28 @@ msgstr "Voor"
 msgid "Subscription frequency choice field"
 msgstr "Abonnementsfrequentie keuzeveld"
 
-#: blocks/form-radio-field/index.js:1 blocks/form-radio-option/index.js:1
+#: blocks/form-radio-field/index.js:1
+#: blocks/form-radio-option/index.js:1
 msgid "frequency"
 msgstr "frequentie"
 
-#: blocks/form-radio-field/index.js:1 blocks/form-radio-option/index.js:1
+#: blocks/form-radio-field/index.js:1
+#: blocks/form-radio-option/index.js:1
 msgid "interval"
 msgstr "interval"
 
-#: blocks/form-radio-field/index.js:1 blocks/form-radio-option/index.js:1
+#: blocks/form-radio-field/index.js:1
+#: blocks/form-radio-option/index.js:1
 msgid "recurrence"
 msgstr "herhaling"
 
-#: blocks/form-radio-field/index.js:1 blocks/form-radio-option/index.js:1
+#: blocks/form-radio-field/index.js:1
+#: blocks/form-radio-option/index.js:1
 msgid "subscription"
 msgstr "abonnement"
 
-#: blocks/form-radio-field/index.js:1 blocks/form-radio-option/index.js:1
+#: blocks/form-radio-field/index.js:1
+#: blocks/form-radio-option/index.js:1
 msgid "Annual"
 msgstr "Jaarlijks"
 
