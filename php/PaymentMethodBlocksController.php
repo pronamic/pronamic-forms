@@ -93,7 +93,7 @@ final class PaymentMethodBlocksController {
 			[
 				'id'    => 'ideal',
 				'title' => \__( 'iDEAL payment method', 'pronamic-forms' ),
-				'label' => $this->get_label( 'ideal', \__( 'iDEAL', 'pronamic-forms' ) ),
+				'label' => $this->get_label( 'ideal', \__( 'iDEAL | Wero', 'pronamic-forms' ) ),
 			],
 		];
 	}
@@ -173,7 +173,7 @@ final class PaymentMethodBlocksController {
 				\__( 'payment method', 'pronamic-forms' ),
 				\__( 'Bancontact', 'pronamic-forms' ),
 				\__( 'Card', 'pronamic-forms' ),
-				\__( 'iDEAL', 'pronamic-forms' ),
+				\__( 'iDEAL | Wero', 'pronamic-forms' ),
 			],
 			'attributes'  => [
 				'label'     => \__( 'Payment method', 'pronamic-forms' ),
