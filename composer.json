@@ -7,13 +7,15 @@
 			"automattic/jetpack-autoloader": true,
 			"phpstan/extension-installer": true
 		},
-        "sort-packages": true,
-		"wp-slug": "pronamic-forms"
+		"sort-packages": true
 	},
 	"autoload": {
 		"psr-4": {
 			"Pronamic\\PronamicForms\\": "psr-4/"
 		}
+	},
+	"extra": {
+		"wp-slug": "pronamic-forms"
 	},
 	"require": {
 		"php": "^8.2",
