@@ -43,7 +43,6 @@ final class FormSubmissionProcessor {
 			$meta_input['_pronamic_submission_origin_post_id']   = $origin_post->ID;
 			$meta_input['_pronamic_submission_origin_title']     = \get_the_title( $origin_post );
 			$meta_input['_pronamic_submission_origin_permalink'] = \get_permalink( $origin_post );
-			
 		}
 
 		if ( \array_key_exists( 'HTTP_HOST', $_SERVER ) && \array_key_exists( 'REQUEST_URI', $_SERVER ) ) {
