@@ -8,6 +8,8 @@
  * @package   Pronamic\PronamicForms
  */
 
+declare(strict_types=1);
+
 namespace Pronamic\PronamicForms;
 
 use Pronamic\WpPayLogos\ImageService;
