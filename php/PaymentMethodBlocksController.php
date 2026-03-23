@@ -43,7 +43,7 @@ final class PaymentMethodBlocksController {
 
 	/**
 	 * Get label.
-	 * 
+	 *
 	 * @param string $id   ID.
 	 * @param string $label Label.
 	 * @return string
@@ -75,7 +75,7 @@ final class PaymentMethodBlocksController {
 
 	/**
 	 * Get payment methods.
-	 * 
+	 *
 	 * @return array
 	 */
 	private function get_payment_methods() {
