@@ -22,6 +22,8 @@
  * @package   Pronamic\PronamicForms
  */
 
+declare(strict_types=1);
+
 /**
  * Autoload
  */
