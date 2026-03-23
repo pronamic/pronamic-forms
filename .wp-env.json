@@ -20,5 +20,6 @@
 		"wp-content/plugins/gutenberg": "https://downloads.wordpress.org/plugin/gutenberg.zip",
 		"wp-content/plugins/jetpack": "https://downloads.wordpress.org/plugin/jetpack.zip",
 		"wp-content/plugins/pronamic-forms-dev": "./"
-	}
+	},
+	"testsEnvironment": false
 }
