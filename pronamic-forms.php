@@ -31,9 +31,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Autoload
+ * Autoload.
  */
-require __DIR__ . '/vendor/autoload_packages.php';
+$autoload_path = __DIR__ . '/vendor/autoload_packages.php';
+
+if ( \file_exists( $autoload_path ) ) {
+	require_once $autoload_path;
+}
 
 /**
  * Bootstrap.
