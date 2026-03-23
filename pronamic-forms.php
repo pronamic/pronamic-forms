@@ -24,6 +24,8 @@
 
 declare(strict_types=1);
 
+namespace Pronamic\PronamicForms;
+
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
@@ -43,4 +45,4 @@ add_action(
 	}
 );
 
-Pronamic\PronamicForms\Plugin::instance();
+Plugin::instance();
