@@ -23,7 +23,7 @@ final class Plugin {
 
 	/**
 	 * Controller.
-	 * 
+	 *
 	 * @var array
 	 */
 	private $controllers = [];
