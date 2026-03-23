@@ -12,14 +12,14 @@ namespace Pronamic\PronamicForms;
 
 /**
  * Block editor controller class
- * 
+ *
  * @link https://github.com/WordPress/wordpress-develop/blob/50af37a9083f003f8e98d089091d2cc428797cc5/src/wp-includes/block-editor.php#L78-L86
  * @phpstan-type BlockCategory array{ slug: string, title: string, icon: string }
  */
 final class BlockEditorController {
 	/**
 	 * Setup.
-	 * 
+	 *
 	 * @return void
 	 */
 	public function setup() {
@@ -28,7 +28,7 @@ final class BlockEditorController {
 
 	/**
 	 * Block categories all.
-	 * 
+	 *
 	 * @link https://github.com/WordPress/wordpress-develop/blob/50af37a9083f003f8e98d089091d2cc428797cc5/src/wp-includes/block-editor.php#L78-L86
 	 * @param BlockCategory[] $categories Categories.
 	 * @return BlockCategory[]
