@@ -15,6 +15,13 @@ namespace Pronamic\PronamicForms;
  */
 final class Plugin {
 	/**
+	 * Instance.
+	 *
+	 * @var self|null
+	 */
+	private static ?self $instance = null;
+
+	/**
 	 * Controller.
 	 * 
 	 * @var array
@@ -24,7 +31,7 @@ final class Plugin {
 	/**
 	 * Construct plugin.
 	 */
-	public function __construct() {
+	private function __construct() {
 		$this->controllers = [
 			new BlockEditorController(),
 			new BlockPatternCategoriesController(),
@@ -35,16 +42,22 @@ final class Plugin {
 			new PostTypesController(),
 			new RenderFormBlockController(),
 		];
-	}
 
-	/**
-	 * Setup.
-	 * 
-	 * @return void
-	 */
-	public function setup() {
 		foreach ( $this->controllers as $controller ) {
 			$controller->setup();
 		}
+	}
+
+	/**
+	 * Instance.
+	 *
+	 * @return self
+	 */
+	public static function instance(): self {
+		if ( null === self::$instance ) {
+			self::$instance = new self();
+		}
+
+		return self::$instance;
 	}
 }

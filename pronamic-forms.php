@@ -6,7 +6,7 @@
  *
  * Version: 1.2.1
  * Requires at least: 6.7
- * Requires PHP: 8.1
+ * Requires PHP: 8.2
  *
  * Author: Pronamic
  * Author URI: https://www.pronamic.eu/
@@ -37,6 +37,4 @@ add_action(
 	}
 );
 
-$pronamic_forms_plugin = new Pronamic\PronamicForms\Plugin();
-
-$pronamic_forms_plugin->setup();
+Pronamic\PronamicForms\Plugin::instance();
