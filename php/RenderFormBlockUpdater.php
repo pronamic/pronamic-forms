@@ -121,8 +121,8 @@ class RenderFormBlockUpdater {
 	/**
 	 * Update the inner content of the parsed block via a callback function.
 	 *
-	 * @param ParsedBlock $parsed_block Parsed block.
-	 * @param callabl     $callback     Callback function.
+	 * @param ParsedBlock                           $parsed_block Parsed block.
+	 * @param callable(string, ParsedBlock): string $callback     Callback function.
 	 * @return ParsedBlock
 	 */
 	private function update_inner_content( $parsed_block, $callback ) {
