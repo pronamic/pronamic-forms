@@ -1,4 +1,5 @@
 {
+	"version": "2.0.0",
 	"dependencies": {
 		"@wordpress/interactivity": "^6.42.0",
 		"clsx": "^2.1.1"
@@ -15,6 +16,5 @@
 		"build-blocks-manifest": "wp-scripts build-blocks-manifest --input=blocks --output=blocks/blocks-manifest.php",
 		"build-wp-scripts": "wp-scripts build --webpack-src-dir=blocks-src --output-path=blocks",
 		"start": "wp-scripts start --webpack-src-dir=blocks-src --output-path=blocks"
-	},
-	"version": "2.0.0"
+	}
 }
