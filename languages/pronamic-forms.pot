@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-03-23T12:41:27+00:00\n"
+"POT-Creation-Date: 2026-03-25T09:22:49+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: pronamic-forms\n"
@@ -156,11 +156,11 @@ msgstr ""
 #: psr-4/PaymentMethodBlocksController.php:98
 #: psr-4/PaymentMethodBlocksController.php:178
 #: blocks/form/index.js:1
-msgid "iDEAL"
+msgid "iDEAL | Wero"
 msgstr ""
 
 #: patterns/donation-form.php:71
-msgid "By making a recurring donation, you authorize automatic collection of future payments. For Bancontact, iDEAL, and SOFORT Banking, future payments will be collected via SEPA direct debit."
+msgid "By making a recurring donation, you authorize automatic collection of future payments. For Bancontact, iDEAL | Wero, and SOFORT Banking, future payments will be collected via SEPA direct debit."
 msgstr ""
 
 #: patterns/donation-form.php:76
@@ -292,7 +292,7 @@ msgid "Card payment method"
 msgstr ""
 
 #: psr-4/PaymentMethodBlocksController.php:97
-msgid "iDEAL payment method"
+msgid "iDEAL | Wero payment method"
 msgstr ""
 
 #: psr-4/PaymentMethodBlocksController.php:173

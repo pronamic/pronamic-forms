@@ -68,7 +68,7 @@
 <!-- /wp:pronamic/form-radio-field -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->
-<p class="has-small-font-size"><?php \esc_html_e( 'By making a recurring donation, you authorize automatic collection of future payments. For Bancontact, iDEAL, and SOFORT Banking, future payments will be collected via SEPA direct debit.', 'pronamic-forms' ); ?></p>
+<p class="has-small-font-size"><?php \esc_html_e( 'By making a recurring donation, you authorize automatic collection of future payments. For Bancontact, iDEAL | Wero, and SOFORT Banking, future payments will be collected via SEPA direct debit.', 'pronamic-forms' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->

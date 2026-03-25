@@ -8,9 +8,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2025-05-20T17:14:18+00:00\n"
-"PO-Revision-Date: 2026-03-23T12:41:30+00:00\n"
+"PO-Revision-Date: 2026-03-25T09:22:52+00:00\n"
 "Language: nl_NL\n"
-"X-Generator: Poedit 3.6\n"
+"X-Generator: Poedit 3.8\n"
 "X-Domain: pronamic-forms\n"
 
 #. Plugin Name of the plugin
@@ -155,12 +155,12 @@ msgstr "Kaart"
 #: psr-4/PaymentMethodBlocksController.php:98
 #: psr-4/PaymentMethodBlocksController.php:178
 #: blocks/form/index.js:1
-msgid "iDEAL"
-msgstr "iDEAL"
+msgid "iDEAL | Wero"
+msgstr "iDEAL | Wero"
 
 #: patterns/donation-form.php:71
-msgid "By making a recurring donation, you authorize automatic collection of future payments. For Bancontact, iDEAL, and SOFORT Banking, future payments will be collected via SEPA direct debit."
-msgstr "Bij een periodieke donatie geef je toestemming voor het automatisch incasseren van vervolgbetalingen. Voor Bancontact, iDEAL en SOFORT Banking worden vervolgbetalingen uitgevoerd via een SEPA-incasso."
+msgid "By making a recurring donation, you authorize automatic collection of future payments. For Bancontact, iDEAL | Wero, and SOFORT Banking, future payments will be collected via SEPA direct debit."
+msgstr "Met een periodieke donatie geef je toestemming voor automatische incasso van toekomstige betalingen. Voor Bancontact, iDEAL | Wero en SOFORT Banking worden toekomstige betalingen geïnd via SEPA-incasso."
 
 #: patterns/donation-form.php:76
 #: blocks/form/index.js:1
@@ -291,8 +291,8 @@ msgid "Card payment method"
 msgstr "Kaart-betaalmethode"
 
 #: psr-4/PaymentMethodBlocksController.php:97
-msgid "iDEAL payment method"
-msgstr "iDEAL-betaalmethode"
+msgid "iDEAL | Wero payment method"
+msgstr "iDEAL | Wero betaalmethode"
 
 #: psr-4/PaymentMethodBlocksController.php:173
 msgid "Payment method field"
