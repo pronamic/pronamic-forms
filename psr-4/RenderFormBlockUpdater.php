@@ -3,10 +3,12 @@
  * Render form block updater
  *
  * @author    Pronamic <info@pronamic.eu>
- * @copyright 2005-2024 Pronamic
+ * @copyright 2005-2026 Pronamic
  * @license   GPL-2.0-or-later
  * @package   Pronamic\PronamicForms
  */
+
+declare(strict_types=1);
 
 namespace Pronamic\PronamicForms;
 
@@ -119,8 +121,8 @@ class RenderFormBlockUpdater {
 	/**
 	 * Update the inner content of the parsed block via a callback function.
 	 *
-	 * @param ParsedBlock $parsed_block Parsed block.
-	 * @param callabl     $callback     Callback function.
+	 * @param ParsedBlock                           $parsed_block Parsed block.
+	 * @param callable(string, ParsedBlock): string $callback     Callback function.
 	 * @return ParsedBlock
 	 */
 	private function update_inner_content( $parsed_block, $callback ) {

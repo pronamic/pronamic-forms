@@ -3,10 +3,12 @@
  * Post types controller
  *
  * @author    Pronamic <info@pronamic.eu>
- * @copyright 2005-2024 Pronamic
+ * @copyright 2005-2026 Pronamic
  * @license   GPL-2.0-or-later
  * @package   Pronamic\PronamicForms
  */
+
+declare(strict_types=1);
 
 namespace Pronamic\PronamicForms;
 
@@ -16,7 +18,7 @@ namespace Pronamic\PronamicForms;
 final class PostTypesController {
 	/**
 	 * Setup.
-	 * 
+	 *
 	 * @return void
 	 */
 	public function setup() {
@@ -28,7 +30,7 @@ final class PostTypesController {
 
 	/**
 	 * Init.
-	 * 
+	 *
 	 * @return void
 	 */
 	private function init() {
@@ -50,7 +52,7 @@ final class PostTypesController {
 
 	/**
 	 * Manage posts columns.
-	 * 
+	 *
 	 * @link https://developer.wordpress.org/reference/hooks/manage_post_type_posts_columns/
 	 * @param array $columns Columns.
 	 * @return array
@@ -75,7 +77,7 @@ final class PostTypesController {
 
 	/**
 	 * Manage posts custom column.
-	 * 
+	 *
 	 * @link https://developer.wordpress.org/reference/hooks/manage_post-post_type_posts_custom_column/
 	 * @param string $column_name Column name.
 	 * @param int    $post_id     Post ID.

@@ -7,13 +7,15 @@
 			"automattic/jetpack-autoloader": true,
 			"phpstan/extension-installer": true
 		},
-        "sort-packages": true,
-		"wp-slug": "pronamic-forms"
+		"sort-packages": true
 	},
 	"autoload": {
 		"psr-4": {
-			"Pronamic\\PronamicForms\\": "php/"
+			"Pronamic\\PronamicForms\\": "psr-4/"
 		}
+	},
+	"extra": {
+		"wp-slug": "pronamic-forms"
 	},
 	"require": {
 		"php": "^8.2",
@@ -25,9 +27,9 @@
 		"phpstan/phpstan": "^2.1",
 		"phpstan/phpstan-strict-rules": "^2.0",
 		"pronamic/pronamic-cli": "dev-main",
-		"pronamic/wp-coding-standards": "^2.2",
-		"rector/rector": "^2.0",
-		"roots/wordpress-no-content": "^6.7",
+		"pronamic/wp-coding-standards": "^2.5",
+		"rector/rector": "^2.3",
+		"roots/wordpress-no-content": "^6.9",
 		"szepeviktor/phpstan-wordpress": "^2.0",
 		"wp-cli/dist-archive-command": "*",
 		"wp-cli/wp-cli-bundle": "*",
@@ -45,7 +47,7 @@
 			"rsync --recursive --verbose ./blocks/ ./build/stage-1/blocks/",
 			"rsync --recursive --verbose --exclude-from=.distignore ./build/stage-1/ ./build/stage-2/",
 			"vendor/bin/wp i18n make-pot ./build/stage-2/ --slug=pronamic-forms",
-			"vendor/bin/wp i18n make-json ./build/stage-2/languages --no-purge",
+			"vendor/bin/wp i18n make-json ./build/stage-2/languages",
 			"vendor/bin/wp i18n make-mo ./build/stage-2/languages/",
 			"vendor/bin/wp dist-archive ./build/stage-2/ --plugin-dirname=pronamic-forms"
 		],

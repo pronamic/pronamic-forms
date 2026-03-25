@@ -3,10 +3,12 @@
  * Payment method blocks controller
  *
  * @author    Pronamic <info@pronamic.eu>
- * @copyright 2005-2024 Pronamic
+ * @copyright 2005-2026 Pronamic
  * @license   GPL-2.0-or-later
  * @package   Pronamic\PronamicForms
  */
+
+declare(strict_types=1);
 
 namespace Pronamic\PronamicForms;
 
@@ -43,7 +45,7 @@ final class PaymentMethodBlocksController {
 
 	/**
 	 * Get label.
-	 * 
+	 *
 	 * @param string $id   ID.
 	 * @param string $label Label.
 	 * @return string
@@ -75,7 +77,7 @@ final class PaymentMethodBlocksController {
 
 	/**
 	 * Get payment methods.
-	 * 
+	 *
 	 * @return array
 	 */
 	private function get_payment_methods() {
