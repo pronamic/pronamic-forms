@@ -189,7 +189,7 @@ final class PayController {
 				true
 			)
 				&&
-			true !== ( $attributes['checked'] ?? false )
+			( ! \array_key_exists( 'checked', $attributes ) || true !== $attributes['checked'] )
 		) {
 			return;
 		}
