@@ -34,10 +34,12 @@ final class Plugin {
 	 * Construct plugin.
 	 */
 	private function __construct() {
+		$languages_rel_path = dirname( plugin_basename( __DIR__ ) ) . '/languages';
+
 		add_action(
 			'init',
-			static function () {
-				load_plugin_textdomain( 'pronamic-forms', false, dirname( plugin_basename( __DIR__ ) ) . '/languages' );
+			static function () use ( $languages_rel_path ) {
+				load_plugin_textdomain( 'pronamic-forms', false, $languages_rel_path );
 			}
 		);
 
