@@ -346,7 +346,7 @@ final class PayController {
 	 * @return string
 	 */
 	private function payment_source_description() {
-		return \__( 'Pronamic Forms Entry', 'pronamic-pay-doneren-met-mollie' );
+		return \__( 'Pronamic Forms Entry', 'pronamic-forms' );
 	}
 
 	/**
@@ -375,7 +375,7 @@ final class PayController {
 	 * @return string
 	 */
 	private function subscription_source_description() {
-		return \__( 'Pronamic Forms Entry', 'pronamic-pay-doneren-met-mollie' );
+		return \__( 'Pronamic Forms Entry', 'pronamic-forms' );
 	}
 
 	/**
