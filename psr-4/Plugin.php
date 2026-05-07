@@ -34,6 +34,13 @@ final class Plugin {
 	 * Construct plugin.
 	 */
 	private function __construct() {
+		add_action(
+			'init',
+			static function () {
+				load_plugin_textdomain( 'pronamic-forms', false, dirname( plugin_basename( __DIR__ ) ) . '/languages' );
+			}
+		);
+
 		$this->controllers = [
 			new BlockEditorController(),
 			new BlockPatternCategoriesController(),

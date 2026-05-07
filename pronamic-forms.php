@@ -39,14 +39,4 @@ if ( \file_exists( $autoload_path ) ) {
 	require_once $autoload_path;
 }
 
-/**
- * Bootstrap.
- */
-add_action(
-	'init',
-	function () {
-		load_plugin_textdomain( 'pronamic-forms', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
-	}
-);
-
 Plugin::instance();
