@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.0.1] - 2026-05-13
+
+### Fixed
+
+- Fixed text domain in PayController translation strings, changing from "pronamic-pay-doneren-met-mollie" to "pronamic-forms".
+- Fixed incorrect amount calculation with radio and checkbox options — amounts are now summed only for the selected option instead of all options.
+
+### Changed
+
+- Updated iDEAL payment method branding to "iDEAL | Wero".
+
+Full set of changes: [`2.0.0...2.0.1`][2.0.1]
+
+[2.0.1]: https://github.com/pronamic/pronamic-forms/compare/v2.0.0...v2.0.1
+
 ## [2.0.0] - 2026-03-23
 
 ### Breaking Changes
