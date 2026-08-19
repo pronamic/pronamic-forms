@@ -46,7 +46,6 @@ registerBlockType( metadata.name, {
 					<PanelBody title={ __( 'Settings', 'pronamic-forms' ) }>
 						<TextControl
 							__nextHasNoMarginBottom
-							__next40pxDefaultSize
 							autoComplete="off"
 							label={ __( 'Value', 'pronamic-forms' ) }
 							value={ attributes.value }
@@ -76,7 +75,6 @@ registerBlockType( metadata.name, {
 				<InspectorControls group="advanced">
 					<TextControl
 						__nextHasNoMarginBottom
-						__next40pxDefaultSize
 						autoComplete="off"
 						label={ __( 'Reference', 'pronamic-forms' ) }
 						value={ attributes.reference }

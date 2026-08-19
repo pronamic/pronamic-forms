@@ -63,7 +63,6 @@ registerBlockType( metadata.name, {
 				<InspectorControls group="advanced">
 					<TextControl
 						__nextHasNoMarginBottom
-						__next40pxDefaultSize
 						autoComplete="off"
 						label={ __( 'Name', 'pronamic-forms' ) }
 						value={ attributes.name }
@@ -76,7 +75,6 @@ registerBlockType( metadata.name, {
 
 					<TextControl
 						__nextHasNoMarginBottom
-						__next40pxDefaultSize
 						autoComplete="off"
 						label={ __( 'Reference', 'pronamic-forms' ) }
 						value={ attributes.reference }

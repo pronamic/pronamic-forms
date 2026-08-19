@@ -44,7 +44,6 @@ registerBlockType( metadata.name, {
 					<PanelBody title={ __( 'Settings', 'pronamic-forms' ) }>
 						<TextControl
 							__nextHasNoMarginBottom
-							__next40pxDefaultSize
 							autoComplete="off"
 							label={ __( 'Value' ) }
 							value={ attributes.value }
