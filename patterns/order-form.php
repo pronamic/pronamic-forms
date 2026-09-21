@@ -39,7 +39,7 @@
 <!-- /wp:pronamic/form-field --></div>
 <!-- /wp:group -->
 
-<!-- wp:pronamic/form-field {"type":"email","required":true} -->
+<!-- wp:pronamic/form-field {"type":"email","required":true,"reference":"pronamic_payment_customer_email"} -->
 <div class="wp-block-pronamic-form-field"><div class="wp-block-pronamic-form-label"><label><?php \esc_html_e( 'Email address', 'pronamic-forms' ); ?></label></div><div class="wp-block-pronamic-form-control"><input required class="wp-block-pronamic-form-control__element" value="" type="email"/></div></div>
 <!-- /wp:pronamic/form-field -->
 
