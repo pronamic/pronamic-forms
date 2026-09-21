@@ -16,6 +16,7 @@ use Pronamic\WordPress\DateTime\DateTimeImmutable;
 use Pronamic\WordPress\Money\Currencies;
 use Pronamic\WordPress\Money\Currency;
 use Pronamic\WordPress\Money\Money;
+use Pronamic\WordPress\Pay\Customer;
 use Pronamic\WordPress\Pay\Plugin as PronamicPayPlugin;
 use Pronamic\WordPress\Pay\Payments\Payment;
 use Pronamic\WordPress\Pay\Payments\PaymentLines;
@@ -56,6 +57,7 @@ final class PayController {
 	 */
 	private function process_payment( $parsed_block, $entry_post_id ) {
 		$payment = new Payment();
+		$payment->set_customer( new Customer() );
 
 		$payment->source    = 'pronamic_forms_entry';
 		$payment->source_id = $entry_post_id;
@@ -129,6 +131,15 @@ final class PayController {
 
 				if ( true === $checked && '' !== $value ) {
 					$payment->set_payment_method( $value );
+				}
+			}
+
+			if ( 'pronamic_payment_customer_email' === $reference ) {
+				$value = $attributes['value'] ?? '';
+
+				if ( \is_string( $value ) && false !== \is_email( $value ) ) {
+					$payment->email = $value;
+					$payment->get_customer()?->set_email( $value );
 				}
 			}
 		}
