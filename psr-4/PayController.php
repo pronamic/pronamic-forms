@@ -80,7 +80,8 @@ final class PayController {
 
 		$this->complement_payment_subscriptions_via_block_recursive( $payment, $parsed_block );
 
-		$payment->set_description( 'Test' );
+		/* translators: %s: entry post ID. */
+		$payment->set_description( \sprintf( \__( 'Form submission %s', 'pronamic-forms' ), $entry_post_id ) );
 
 		$gateway = PronamicPayPlugin::get_gateway( \get_option( 'pronamic_pay_config_id' ) );
 
