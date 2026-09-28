@@ -5,6 +5,27 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.1.0] - 2026-09-28
+
+### Added
+
+- Added support for passing the submitter's email address to Pronamic Pay. A form field with the reference `pronamic_payment_customer_email` now sets the payment email and the customer email, provided the value is a valid email address.
+- The email fields in the contact, donation, order, and product configurator form patterns now use the `pronamic_payment_customer_email` reference by default.
+
+### Changed
+
+- Payment descriptions are now translatable and read "Form submission {entry ID}" instead of the placeholder "Test" ([#13](https://github.com/pronamic/pronamic-forms/issues/13)).
+- Removed the deprecated `__next40pxDefaultSize` props from the block editor controls ([#12](https://github.com/pronamic/pronamic-forms/pull/12)).
+- Updated the Dutch (nl_NL) translations.
+- Updated npm dependencies:
+  - `@wordpress/interactivity` from 6.42.0 to 6.55.0.
+  - `@wordpress/env` from 11.2.0 to 11.15.0.
+  - `@wordpress/scripts` from 31.7.0 to 35.0.0.
+
+Full set of changes: [`2.0.1...2.1.0`][2.1.0]
+
+[2.1.0]: https://github.com/pronamic/pronamic-forms/compare/v2.0.1...v2.1.0
+
 ## [2.0.1] - 2026-05-13
 
 ### Fixed
