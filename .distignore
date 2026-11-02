@@ -23,3 +23,7 @@ phpstan.neon.dist
 .phpcs.dir.xml
 
 /rector.php
+
+/build/
+
+/node_modules/

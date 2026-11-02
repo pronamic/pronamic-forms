@@ -37,27 +37,24 @@
 	},
 	"scripts": {
 		"build": [
-			"rm -rf ./build",
-			"mkdir ./build",
-			"mkdir ./build/stage-1",
-			"mkdir ./build/stage-2",
-			"rsync --recursive --verbose --exclude-from=.distignore --exclude-from=.gitignore ./ ./build/stage-1/",
-			"composer install --no-dev --prefer-dist --optimize-autoloader --working-dir=./build/stage-1/",
 			"npm run build",
-			"rsync --recursive --verbose ./blocks/ ./build/stage-1/blocks/",
-			"rsync --recursive --verbose --exclude-from=.distignore ./build/stage-1/ ./build/stage-2/",
-			"vendor/bin/wp i18n make-pot ./build/stage-2/ --slug=pronamic-forms",
-			"vendor/bin/wp i18n make-json ./build/stage-2/languages",
-			"vendor/bin/wp i18n make-mo ./build/stage-2/languages/",
-			"vendor/bin/wp dist-archive ./build/stage-2/ --plugin-dirname=pronamic-forms"
+			"rm -rf ./build/stage-1",
+			"rsync --recursive --verbose --exclude-from=.distignore --exclude=/vendor/ ./ ./build/stage-1/",
+			"composer install --no-dev --prefer-dist --optimize-autoloader --working-dir=./build/stage-1/",
+			"rsync --recursive --delete --delete-excluded --verbose --exclude-from=.distignore ./build/stage-1/ ./build/pronamic-forms/",
+			"vendor/bin/wp i18n make-pot ./build/pronamic-forms/ --slug=pronamic-forms",
+			"vendor/bin/wp i18n make-json ./build/pronamic-forms/languages/",
+			"vendor/bin/wp i18n make-mo ./build/pronamic-forms/languages/",
+			"vendor/bin/wp dist-archive ./build/pronamic-forms/ --plugin-dirname=pronamic-forms --force"
+		],
+		"dist-archive": "wp dist-archive . --plugin-dirname=pronamic-forms",
+		"make-pot": [
+			"@build",
+			"rsync --recursive --delete --verbose ./build/pronamic-forms/languages/ ./languages/",
+			"vendor/bin/wp i18n update-po ./languages/pronamic-forms.pot"
 		],
 		"phpcbf": "XDEBUG_MODE=off vendor/bin/phpcbf",
 		"phpcs": "vendor/bin/phpcs -s -v",
-		"phpstan": "vendor/bin/phpstan analyse --memory-limit=-1",
-		"translate": [
-			"@build",
-			"rsync --recursive --delete --verbose ./build/stage-2/languages/ ./languages/",
-			"vendor/bin/wp i18n update-po ./languages/pronamic-forms.pot"
-		]
+		"phpstan": "vendor/bin/phpstan analyse --memory-limit=-1"
 	}
 }
