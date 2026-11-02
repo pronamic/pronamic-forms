@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Composer
+
+- `automattic/jetpack-autoloader` requirement widened from `^5.0` to `^5.0 || ^6.0` ([#16](https://github.com/pronamic/pronamic-forms/issues/16)).
+
 ## [2.1.1] - 2026-11-02
 
 ### Security
