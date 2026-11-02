@@ -37,11 +37,13 @@ final class PostTypesController {
 		\register_post_type(
 			'pronamic_submission',
 			[
-				'label'        => \__( 'Submissions', 'pronamic-forms' ),
-				'show_ui'      => true,
-				'menu_icon'    => 'dashicons-feedback',
-				'show_in_rest' => true,
-				'supports'     => [
+				'label'                 => \__( 'Submissions', 'pronamic-forms' ),
+				'public'                => false,
+				'show_ui'               => true,
+				'menu_icon'             => 'dashicons-feedback',
+				'show_in_rest'          => true,
+				'rest_controller_class' => SubmissionsRestController::class,
+				'supports'              => [
 					'title',
 					'editor',
 					'revisions',
