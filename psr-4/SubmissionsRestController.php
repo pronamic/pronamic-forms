@@ -19,9 +19,11 @@ use WP_REST_Request;
 /**
  * Submissions REST controller class
  *
- * Submissions are only meant to be viewed by users who can edit them, the
- * default posts controller allows everyone to read posts with the `publish`
- * status.
+ * Submissions are stored with the `private` status and are only meant to be
+ * viewed by users who can edit them. The default posts controller allows
+ * everyone to read posts with the `publish` status, for example submissions
+ * stored by earlier versions or submissions whose visibility is changed in the
+ * editor.
  *
  * @link https://github.com/pronamic/pronamic-forms/issues/14
  */

@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - The REST API endpoints for submissions are now only available to users who can edit submissions ([#14](https://github.com/pronamic/pronamic-forms/issues/14)).
+- New submissions are now stored with the `private` post status instead of `publish`.
 - The `pronamic_submission` post type is now explicitly registered as non-public.
 
 ## [2.1.0] - 2026-09-28

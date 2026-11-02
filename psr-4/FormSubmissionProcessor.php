@@ -76,7 +76,7 @@ final class FormSubmissionProcessor {
 					\__( 'Entry – %s', 'pronamic-forms' ),
 					\wp_date( $date_format )
 				),
-				'post_status'  => 'publish',
+				'post_status'  => 'private',
 				'post_type'    => 'pronamic_submission',
 				'meta_input'   => $meta_input,
 			],
