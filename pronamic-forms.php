@@ -17,7 +17,7 @@
  * License: GPL-2.0-or-later
  *
  * @author    Pronamic <info@pronamic.eu>
- * @copyright 2005-2023 Pronamic
+ * @copyright 2005-2026 Pronamic
  * @license   GPL-2.0-or-later
  * @package   Pronamic\PronamicForms
  */
@@ -42,11 +42,4 @@ if ( \file_exists( $autoload_path ) ) {
 /**
  * Bootstrap.
  */
-add_action(
-	'init',
-	function () {
-		load_plugin_textdomain( 'pronamic-forms', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
-	}
-);
-
 Plugin::instance();
