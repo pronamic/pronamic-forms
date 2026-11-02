@@ -7,9 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.1.2] - 2026-11-02
+
 ### Composer
 
-- `automattic/jetpack-autoloader` requirement widened from `^5.0` to `^5.0 || ^6.0` ([#16](https://github.com/pronamic/pronamic-forms/issues/16)).
+- Changed `automattic/jetpack-autoloader` from `^5.0` to `^5.0 || ^6.0` to allow Jetpack Autoloader 6.x ([#16](https://github.com/pronamic/pronamic-forms/issues/16)). Jetpack Autoloader 6.0.0 only raises its minimum PHP version to 7.4. The lock file keeps `v5.0.23`. Release notes: https://github.com/Automattic/jetpack-autoloader/blob/v6.0.0/CHANGELOG.md
+
+Full set of changes: [`2.1.1...2.1.2`][2.1.2]
+
+[2.1.2]: https://github.com/pronamic/pronamic-forms/compare/v2.1.1...v2.1.2
 
 ## [2.1.1] - 2026-11-02
 
