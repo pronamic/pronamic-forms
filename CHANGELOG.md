@@ -7,11 +7,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### Changed
+## [2.1.1] - 2026-11-02
+
+### Security
 
 - The REST API endpoints for submissions are now only available to users who can edit submissions ([#14](https://github.com/pronamic/pronamic-forms/issues/14)). Thanks to wellknown.info for reporting this.
+
+### Changed
+
 - New submissions are now stored with the `private` post status instead of `publish`.
 - The `pronamic_submission` post type is now explicitly registered as non-public.
+- The plugin no longer loads its text domain manually; WordPress loads the translations automatically.
+- Updated the Dutch (nl_NL) translations.
+- Streamlined the build and packaging scripts. The `translate` Composer script is renamed to `make-pot`, and a `dist-archive` script is added.
+- Updated npm dependencies:
+  - `@wordpress/interactivity` from 6.55.0 to 8.0.0.
+  - `@wordpress/env` from 11.15.0 to 12.0.0.
+  - `@wordpress/scripts` from 35.0.0 to 37.0.0.
+
+### Composer
+
+- `wp-pay/core` (development requirement) updated from `v4.32.0` to `v4.35.0`. Payment methods are now registered through the `pronamic_pay_register_payment_methods` action, subscription renewal notices go out 14 days in advance instead of 7, and several currency, missing-post and PHP deprecation issues are fixed. ([v4.33.0](https://github.com/pronamic/wp-pay-core/releases/tag/v4.33.0), [v4.34.0](https://github.com/pronamic/wp-pay-core/releases/tag/v4.34.0), [v4.35.0](https://github.com/pronamic/wp-pay-core/releases/tag/v4.35.0))
+
+Full set of changes: [`2.1.0...2.1.1`][2.1.1]
+
+[2.1.1]: https://github.com/pronamic/pronamic-forms/compare/v2.1.0...v2.1.1
 
 ## [2.1.0] - 2026-09-28
 
