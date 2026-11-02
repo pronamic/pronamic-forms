@@ -19,7 +19,7 @@
 	},
 	"require": {
 		"php": "^8.2",
-		"automattic/jetpack-autoloader": "^5.0",
+		"automattic/jetpack-autoloader": "^5.0 || ^6.0",
 		"pronamic/wp-pay-logos": "^2.3"
 	},
 	"require-dev": {
